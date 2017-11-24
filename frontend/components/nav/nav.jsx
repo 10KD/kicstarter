@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 const signOut = (currentUser, logout) => (
   <nav className="sign-out">
-    <h2>{currentUser.username}, you're logged in!</h2>
-    <Link to="/" onClick={logout}>Log Out</Link>
+    <Link to="/" onClick={logout}>Log out</Link>
   </nav>
 );
 

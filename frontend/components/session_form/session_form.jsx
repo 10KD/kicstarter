@@ -8,31 +8,24 @@ class SessionForm extends React.Component {
     this.state = {
       username: "",
       password: ""
-    }
+    };
+    this.guestLogin = this.guestLogin.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   renderErrors() {
-    return(
-      <ul>
-        {this.props.errors.map((error) => (
-          <li>{error}</li>
-        ))}
-      </ul>
-    );
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.processForm(user);
-  }
-
-  alternate() {
-    if (this.props.formType === "login") {
-      return <Link to="/signup">Sign up!</Link>;
-    } else {
-      return <Link to="/login">Log in</Link>;
+    if (this.props.errors) {
+      return(
+          <ul className="errors">
+            {this.props.errors.map((error, idx) => (
+              <li key={`${idx}`}>
+                {error}
+              </li>
+            ))}
+          </ul>
+      );
     }
   }
+
 
   update(input) {
     return e => this.setState({
@@ -46,37 +39,99 @@ class SessionForm extends React.Component {
     }
   }
 
-  render() {
-    return (
 
-      <div className="session-form">
-        <form onSubmit={this.handleSubmit} className="login-form">
-          <h2>{this.props.formType}</h2>
-          <br></br>
-          {this.renderErrors()}
-          <div>
-            <input
-              className="session-input"
-              type="text"
-              value={this.state.username}
-              onChange={this.update("username")}
-            />
-            <br></br>
-            <input
-              className="session-input"
-              type="password"
-              value={this.state.password}
-              onChange={this.update("password")}
-            />
-            <br></br>
+  alternate() {
+    if (this.props.formType === "login") {
+      return <Link to="/signup">Sign up!</Link>;
+    } else {
+      return <Link to="/login">Log in</Link>;
+    }
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const user = Object.assign({}, this.state);
+    this.props.processForm({ user });
+  }
+
+  guestLogin(e) {
+    e.preventDefault();
+    const guest = { user: { username: "guest", password: "555555"} };
+    this.props.login(guest);
+  }
+
+  render() {
+    if (this.props.formType === "login") {
+      return (
+
+        <div className="session-form">
+          <form onSubmit={this.handleSubmit} className="login-form">
+            <h2 className="title">Log in</h2>
+            <div>
+              <input
+                className="session-input"
+                type="text"
+                value={this.state.username}
+                onChange={this.update("username")}
+                placeholder="Username"
+              />
+              <input
+                className="session-input"
+                type="password"
+                value={this.state.password}
+                onChange={this.update("password")}
+                placeholder="Password"
+              />
             <input className="session-submit" type="submit" value="Log me in!" />
-            <br></br>
-            <input className="session-submit" type="submit" value="Guest" />
-          </div>
-        </form>
-        <div className="session-form-footer">New to Kicstarter? {this.alternate()}</div>
-      </div>
-    );
+
+              <div className="divider">
+                <div className="line"></div>
+                <div className="txt">or</div>
+              </div>
+            <button onClick={this.guestLogin} className="session-submit guest">Guest Log in</button>
+            </div>
+            {this.renderErrors()}
+          </form>
+          <div className="session-form-footer">New to Kicstarter? {this.alternate()}</div>
+        </div>
+      );
+    } else {
+      return (
+
+        <div className="session-form">
+          <div className="session-form-header">Have an account? {this.alternate()}</div>
+        <form onSubmit={this.handleSubmit} className="signup-form">
+            <h2 className="title">Sign up</h2>
+            <div>
+              <input
+                className="session-input"
+                type="text"
+                value={this.state.username}
+                onChange={this.update("username")}
+                placeholder="Username"
+              />
+
+              <input
+                className="session-input"
+                type="password"
+                value={this.state.password}
+                onChange={this.update("password")}
+                placeholder="Password"
+              />
+
+            <input className="session-submit" type="submit" value="Create account" />
+
+            <div className="divider">
+              <div className="line"></div>
+              <div className="txt">or</div>
+            </div>
+            <button onClick={this.guestLogin} className="session-submit guest">Guest Log in</button>
+            </div>
+            {this.renderErrors()}
+          </form>
+        </div>
+      );
+    }
   }
 }
 
