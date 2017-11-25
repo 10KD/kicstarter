@@ -1,0 +1,180 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 1, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/base/reset.scss */
+* {
+  font-family: 'roboto', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/nav.scss */
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 15px 20px 15px;
+}
+
+/* line 7, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/nav.scss */
+nav > a {
+  text-decoration: none;
+}
+
+/* line 1, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border-top: solid 1px black;
+  border-bottom: solid 1.5px grey;
+}
+
+/* line 11, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.login-form {
+  margin-top: 60px;
+}
+
+/* line 15, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.signup-form {
+  margin-bottom: 60px;
+}
+
+/* line 18, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.login-form, .signup-form {
+  background-color: white;
+  width: 358px;
+  padding: 20px;
+}
+
+/* line 24, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.title {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+/* line 31, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.errors {
+  color: red;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 37, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.errors li {
+  padding-bottom: 10px;
+}
+
+/* line 43, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-form-footer, .session-form-header {
+  background-color: white;
+  width: 358px;
+  padding: 20px;
+  text-align: center;
+  color: #3D3D66;
+  font-size: 14px;
+}
+
+/* line 52, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-form-footer {
+  border-top: 1px solid #f0f0f0;
+  margin-bottom: 60px;
+}
+
+/* line 57, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-form-header {
+  border-bottom: 1px solid #f0f0f0;
+  margin-top: 60px;
+}
+
+/* line 62, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-input:focus {
+  border: 1px solid #009E74;
+  outline: 0;
+}
+
+/* line 67, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  border: 1px solid #DCDEDD;
+  transition: all 0.3s;
+}
+
+/* line 79, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-submit:hover {
+  background-color: #037362;
+  transform: translateY(-1px);
+}
+
+/* line 84, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.session-submit {
+  width: 100%;
+  color: white;
+  transition: all 0.25s;
+  font-size: 14px;
+  height: 42px;
+  line-height: 2;
+  padding: 6px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  border-radius: 0px;
+  background-color: #009E74;
+}
+
+/* line 98, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.guest:hover {
+  color: #060F46;
+  background-color: #39579A;
+}
+
+/* line 103, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.guest {
+  background-color: #39579A;
+}
+
+/* line 106, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.divider {
+  text-align: center;
+  position: relative;
+}
+
+/* line 111, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.line {
+  height: 1px;
+  background-color: #F1EEEA;
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* line 118, /Users/mbcs/Desktop/Kicstarter/app/assets/stylesheets/components/session_form.scss */
+.txt {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #3D3D66;
+  top: -14px;
+  background-color: white;
+  position: relative;
+  font-size: 14px;
+}
