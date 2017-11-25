@@ -9,6 +9,7 @@ class SessionForm extends React.Component {
       username: "",
       password: ""
     };
+
     this.guestLogin = this.guestLogin.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -31,6 +32,9 @@ class SessionForm extends React.Component {
     return e => this.setState({
       [input]: e.currentTarget.value
     });
+  }
+  componentWillMount() {
+    this.props.clearErrors();
   }
 
   componentWillReceiveProps(newProps) {

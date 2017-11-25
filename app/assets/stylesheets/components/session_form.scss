@@ -54,6 +54,19 @@
   margin-bottom: 60px;
 }
 
+.session-form a {
+  color: #2752ff;
+  text-decoration: none;
+}
+
+.session-form a:hover {
+  color: #282828;
+}
+
+.session-form a:focus {
+  outline: 1px dotted #3D3D66;
+}
+
 .session-form-header {
   border-bottom: 1px solid #f0f0f0;
   margin-top: 60px;
@@ -79,6 +92,10 @@
 .session-submit:hover {
   background-color: #037362;
   transform: translateY(-1px);
+}
+
+.session-submit:focus {
+  outline: 0;
 }
 
 .session-submit {
