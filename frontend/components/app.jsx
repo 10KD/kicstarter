@@ -1,4 +1,4 @@
-
+import { AuthRoute } from '../util/route_util';
 import { Route } from 'react-router-dom';
 import React from 'react';
 import NavContainer from './nav/nav_container';
@@ -10,8 +10,8 @@ export default () => (
     <header className="nav-header">
       <NavContainer />
     </header>
-    <Route path="/login" component={SessionFormContainer} />
-    <Route path="/signup" component={SessionFormContainer} />
+    <AuthRoute path="/login" component={SessionFormContainer} />
+    <AuthRoute path="/signup" component={SessionFormContainer} />
     <Route exact path="/" component={MainContainer} />
 
   </div>
