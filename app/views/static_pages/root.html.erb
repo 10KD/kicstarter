@@ -1,3 +1,11 @@
+<script type="text/javascript">
+  <% if logged_in? %>
+    window.currentUser = <%=  render(
+      "api/users/user.json.jbuilder",
+      user: current_user
+    ).html_safe %>
+  <% end %>
+</script>
 <main id="root">
   <img src="https://i.pinimg.com/originals/59/87/57/59875793cbd685fe2fcf80072f2cd9e0.gif" alt="">
 </main>
