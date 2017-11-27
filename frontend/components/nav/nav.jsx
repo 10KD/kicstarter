@@ -23,7 +23,7 @@ export default ({currentUser, logout}) => (
     <section className="nav-right">
       <button className="search">
         <span>Search</span>
-        <i class="fa fa-search"></i>
+      <i className="fa fa-search"></i>
       </button>
       <div className="sign-in">
         {currentUser ? signOut(currentUser, logout) : signIn()}

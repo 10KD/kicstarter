@@ -68,7 +68,11 @@
 }
 
 .nav-middle a:hover {
-  transition: 60s;
+  // transition: 60s;
+  color: inherit;
+}
+
+.nav-middle a {
   color: inherit;
 }
 
@@ -76,8 +80,8 @@
   width: 30%;
   display: flex;
   justify-content: center;
-  font-family: 'Monoton', cursive;
-  font-size: 32px;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 27px;
   // color: #098530;
   color: #034752;
   // -webkit-text-fill-color: #034752;
