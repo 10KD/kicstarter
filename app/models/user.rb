@@ -4,8 +4,9 @@ class User < ApplicationRecord
   validates :username, :session_token, uniqueness: true
 
   attr_reader :password
-
   after_initialize :ensure_session_token
+
+  has_many :projects
   #prefv
 
   def password=(pw)
