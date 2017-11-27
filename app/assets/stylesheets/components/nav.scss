@@ -21,7 +21,7 @@
 }
 
 // .nav a:active {
-//   color: inherit;
+//   color: transparent;
 // }
 
 .nav a:hover {
@@ -76,13 +76,13 @@
   width: 30%;
   display: flex;
   justify-content: center;
-  font-family: 'Fredoka One', cursive;
-  font-size: 30px;
+  font-family: 'Monoton', cursive;
+  font-size: 32px;
   // color: #098530;
   color: #034752;
-  -webkit-text-fill-color: #034752;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  // -webkit-text-fill-color: #034752;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: black;
 }
 
 .nav div {
