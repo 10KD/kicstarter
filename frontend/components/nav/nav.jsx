@@ -2,17 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const signOut = (currentUser, logout) => (
-  <nav className="sign-out">
     <Link to="/" onClick={logout}>Log out</Link>
-  </nav>
 );
 
 const signIn = () => (
-  <nav className="sign-in">
     <Link to="/login">Sign in</Link>
-  </nav>
 );
 
 export default ({currentUser, logout}) => (
-  currentUser ? signOut(currentUser, logout) : signIn()
+  <div className="nav">
+    <section className="nav-left">
+      <div>Explore</div>
+    <div className="start-project">Start a project</div>
+    </section>
+    <section className="nav-middle">
+      <div>KIC<span>STARTER</span></div>
+    </section>
+    <section className="nav-right">
+      <button className="search">
+        <span>Search</span>
+        <i class="fa fa-search"></i>
+      </button>
+      <div className="sign-in">
+        {currentUser ? signOut(currentUser, logout) : signIn()}
+      </div>
+    </section>
+  </div>
 );

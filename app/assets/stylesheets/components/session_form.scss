@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   background-color: #f0f0f0;
-  border-top: solid 1px black;
   border-bottom: solid 1.5px grey;
   font-family: 'roboto', sans-serif;
 }
@@ -111,6 +110,7 @@
   margin-bottom: 25px;
   border-radius: 0px;
   background-color: #009E74;
+  cursor: pointer;
 }
 
 .guest:hover {

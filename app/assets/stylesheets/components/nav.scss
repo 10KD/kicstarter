@@ -1,22 +1,93 @@
-.nav-header {
+.nav {
   display: flex;
-  justify-content: flex-end;
-  padding: 15px 15px 20px 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 36px 12px 36px;
   font-family: 'roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.4px;
   color: #282828;
+  height: 42px;
+  border-bottom: 1px solid black;
 }
 
-nav > a {
+.nav a {
   text-decoration: none;
 }
 
-nav > a:focus {
+.nav a:focus {
   outline: 1px dotted #3D3D66;
 }
 
-nav > a:hover {
+.nav a:hover {
   color: #009E74;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-left {
+  display: flex;
+  width: 35%;
+  justify-content: flex-start;
+}
+
+.nav-left div {
+  margin-right: 12px;
+  padding: 1px 7px 2px;
+}
+
+.start-project {
+  padding-right: 18px;
+}
+
+.sign-in {
+  margin-left: 18px;
+  line-height: 24px;
+}
+
+
+.fa-search {
+  width: 15px;
+  height: 15px;
+  margin-left: 6px;
+}
+
+.nav-right {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-middle span {
+  color: #098530;
+  -webkit-text-fill-color: #098530;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.nav-middle {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 30px;
+  // color: #098530;
+  color: #034752;
+  // -webkit-text-fill-color: #034752;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: black;
+}
+
+.nav div {
+  display: inline-block;
+}
+
+.search {
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
 }
