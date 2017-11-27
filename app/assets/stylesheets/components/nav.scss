@@ -17,8 +17,12 @@
 }
 
 .nav a:focus {
-  outline: 1px dotted #3D3D66;
+  outline: 1px #3D3D66;
 }
+
+// .nav a:active {
+//   color: inherit;
+// }
 
 .nav a:hover {
   color: #009E74;
@@ -47,6 +51,7 @@
 .sign-in {
   margin-left: 18px;
   line-height: 24px;
+  width: 17%;
 }
 
 
@@ -61,24 +66,23 @@
   display: flex;
   justify-content: flex-end;
 }
-.nav-middle span {
-  color: #098530;
-  -webkit-text-fill-color: #098530;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+
+.nav-middle a:hover {
+  transition: 60s;
+  color: inherit;
 }
 
 .nav-middle {
   width: 30%;
   display: flex;
   justify-content: center;
-  font-family: 'Baloo Bhaijaan', cursive;
+  font-family: 'Fredoka One', cursive;
   font-size: 30px;
   // color: #098530;
   color: #034752;
-  // -webkit-text-fill-color: #034752;
-  // -webkit-text-stroke-width: 1px;
-  // -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: #034752;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .nav div {
@@ -90,4 +94,8 @@
   cursor: pointer;
   font-size: 14px;
   line-height: 24px;
+}
+
+.search:focus {
+  outline: 0;
 }

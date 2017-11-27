@@ -16,7 +16,9 @@ export default ({currentUser, logout}) => (
     <div className="start-project">Start a project</div>
     </section>
     <section className="nav-middle">
-      <div>KIC<span>STARTER</span></div>
+      <Link to="/">
+        <div>KIC<span>STARTER</span></div>
+      </Link>
     </section>
     <section className="nav-right">
       <button className="search">
