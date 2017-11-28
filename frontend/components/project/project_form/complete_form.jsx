@@ -77,7 +77,7 @@ class CompleteForm extends React.Component {
               </p>
             </div>
             <div className="basics-form">
-              <label>Project image Url</label>
+              <label>Project image url</label>
               <div className="form-wrapper">
                 <input type="text"></input>
               </div>
