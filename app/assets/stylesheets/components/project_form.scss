@@ -1,0 +1,29 @@
+.complete-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border-bottom: solid 1.5px #9B9E9E;
+  font-family: 'roboto', sans-serif;
+  min-height: 800px;
+}
+
+.all-forms {
+  width: 520px;
+  height: 700px;
+  border: 1px solid black;
+  margin: 60px;
+}
+
+.form-button {
+  height: 100%;
+  padding: 20px;
+  background-color: white;
+  border-color: #dad7d4;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 0;
+  text-decoration: none;
+  display: flex;
+}

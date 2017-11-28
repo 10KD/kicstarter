@@ -34,11 +34,11 @@ class Api::ProjectsController < ApplicationController
   def destroy
     @project = Project.find(params[:id])
     @project.destroy
-    render :index
+    render :show
   end
 
   def project_params
-    params.require(:projects).permit(:user_id, :category_id, :funding_goal,
+    params.require(:project).permit(:user_id, :category_id, :funding_goal,
     :project_img_url, :title, :short_blurb, :project_details, :funding_end_date)
   end
 end

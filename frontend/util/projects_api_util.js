@@ -5,32 +5,32 @@ export const fetchAllProjects = () => (
   })
 );
 
-export const createProject = (proj) => (
+export const createProject = (project) => (
   $.ajax({
     url: "api/projects",
     method: "POST",
-    data: proj
+    data: { project }
   })
 );
 
-export const fetchOneProject = (proj) => (
+export const fetchOneProject = (project) => (
   $.ajax({
-    url: `api/projects/${proj.id}`,
+    url: `api/projects/${project.id}`,
     method: "GET",
   })
 );
 
-export const upadateProject = (proj) => (
+export const updateProject = (project) => (
   $.ajax({
-    url: `api/projects/${proj.id}`,
+    url: `api/projects/${project.id}`,
     method: "PATCH",
-    data: proj
+    data: { project }
   })
 );
 
-export const deleteProject = (proj) => (
+export const deleteProject = (project) => (
   $.ajax({
-    url: `api/projects/${proj.id}`,
+    url: `api/projects/${project.id}`,
     method: "DELETE"
   })
 );
