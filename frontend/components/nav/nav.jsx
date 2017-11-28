@@ -13,7 +13,11 @@ export default ({currentUser, logout}) => (
   <div className="nav">
     <section className="nav-left">
       <div>Explore</div>
-    <div className="start-project">Start a project</div>
+    <button className="start-project">
+      <Link to="/new">
+        <span>Start a project</span>
+      </Link>
+    </button>
     </section>
     <section className="nav-middle">
       <Link to="/">
@@ -21,10 +25,10 @@ export default ({currentUser, logout}) => (
       </Link>
     </section>
     <section className="nav-right">
-      <button className="search">
+      <div className="search">
         <span>Search</span>
-      <i className="fa fa-search"></i>
-      </button>
+        <i className="fa fa-search"></i>
+      </div>
       <div className="sign-in">
         {currentUser ? signOut(currentUser, logout) : signIn()}
       </div>

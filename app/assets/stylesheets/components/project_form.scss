@@ -14,16 +14,92 @@
   height: 700px;
   border: 1px solid black;
   margin: 60px;
+  background-color: white;
 }
 
+.forms-nav {
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid black;
+}
+
+.form-button p {
+  color: #3D3D66;
+}
+
+.form-button p:hover {
+  cursor: pointer;
+  color: #2752ff;
+}
+
+.form-button span {
+  font-size: 10px;
+  color: #9B9E9E;
+  height: 10px;
+}
+
+.form-button i {
+  margin-right: 8px;
+  color: #cecbc7;
+}
+
+
 .form-button {
-  height: 100%;
+
   padding: 20px;
   background-color: white;
   border-color: #dad7d4;
+  border-top: none;
+  border-bottom: none;
   font-size: 14px;
   line-height: 20px;
   border-radius: 0;
   text-decoration: none;
   display: flex;
+  align-items: center;
+}
+
+.form-submit {
+  flex-direction: column;
+  padding: 11px;
+  width: 100%;
+}
+
+.form-submit p {
+  padding-top: 1px;
+  height: 19px;
+}
+
+.intro h2 {
+  margin-bottom: 6px;
+  font-weight: normal;
+}
+
+.intro p {
+  font-size: 14px;
+}
+.intro {
+  text-align: center;
+  line-height: 30px;
+  margin: 20px;
+}
+
+.basics-form {
+  background-color: #F8F9FD;
+  border-radius: 6px;
+  display: block;
+  line-height: 30px;
+  margin: 0px 0px 18px 0px;
+  padding: 4px;
+}
+
+.basics-form label {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 10px 5px 10px 10px;
+}
+
+.forms-yo {
+  padding: 0px 8px 18px;
 }
