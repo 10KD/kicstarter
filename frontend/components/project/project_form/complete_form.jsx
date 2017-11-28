@@ -77,28 +77,39 @@ class CompleteForm extends React.Component {
               </p>
             </div>
             <div className="basics-form">
-              <label>Project image Url</label><div>
-
+              <label>Project image Url</label>
+              <div className="form-wrapper">
+                <input type="text"></input>
               </div>
             </div>
             <div className="basics-form">
-              <label>Project title</label><div>
+              <label>Project title</label>
+              <div className="form-wrapper">
+                <input type="text"></input>
               </div>
             </div>
             <div className="basics-form">
-              <label>Short blurb</label><div>
+              <label>Short blurb</label>
+              <div className="form-wrapper">
+                <input type="text"></input>
               </div>
             </div>
             <div className="basics-form">
-              <label>Category</label><div>
+              <label>Category</label>
+              <div className="form-wrapper">
+                <input type="text"></input>
               </div>
             </div>
             <div className="basics-form">
-              <label>Funding duration</label><div>
+              <label>Funding duration</label>
+              <div className="form-wrapper">
+                <input type="text"></input>
               </div>
             </div>
             <div className="basics-form">
-              <label>Funding goal</label><div>
+              <label>Funding goal</label>
+              <div className="form-wrapper">
+                <input type="text"></input>
               </div>
             </div>
           </div>

@@ -23,9 +23,9 @@
   border-bottom: 1px solid black;
 }
 
-.form-button p {
-  color: #3D3D66;
-}
+// .form-button p {
+//   color: #3D3D66;
+// }
 
 .form-button p:hover {
   cursor: pointer;
@@ -76,7 +76,7 @@
 }
 
 .intro p {
-  font-size: 14px;
+  font-size: 15px;
 }
 .intro {
   text-align: center;
@@ -87,7 +87,7 @@
 .basics-form {
   background-color: #F8F9FD;
   border-radius: 6px;
-  display: block;
+  display: flex;
   line-height: 30px;
   margin: 0px 0px 18px 0px;
   padding: 4px;
@@ -96,10 +96,47 @@
 .basics-form label {
   font-size: 13px;
   line-height: 18px;
-  font-weight: 700;
+  // font-weight: 700;
   padding: 10px 5px 10px 10px;
+  color: #353535;
+  min-width: 130px;
 }
 
 .forms-yo {
   padding: 0px 8px 18px;
+}
+
+.all-forms button:focus {
+  outline: 0;
+  color: #2752ff;
+}
+
+.all-forms button:active {
+  border-left: 1px solid #dad7d4;
+}
+
+.all-forms label:focus {
+  outline: 0;
+}
+
+.form-wrapper {
+  width: 100%;
+  line-height: 18px;
+  padding: 8px;
+}
+
+
+.form-wrapper input {
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #dad7d4;
+  border-radius: 4px;
+  padding: 10px;
+  line-height: 18px;
+  width: 100%;
+}
+
+.form-wrapper input:focus {
+  outline: 0;
+  border-color: #2752ff;
 }
