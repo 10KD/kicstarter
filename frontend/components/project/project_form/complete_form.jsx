@@ -1,5 +1,6 @@
 
 import React from 'react';
+import BasicsForm from './basics_form';
 import { withRouter, Link } from 'react-router-dom';
 
 class CompleteForm extends React.Component {
@@ -19,6 +20,21 @@ class CompleteForm extends React.Component {
     };
   }
 
+  basicsForm () {
+    if (this.state.formType === "basics") {
+      return (
+        <BasicsForm
+          category_id={this.state.category_id}
+          short_blurb={this.state.short_blurb}
+          project_img_url={this.state.project_img_url}
+          funding_goal={this.state.funding_goal}
+          funding_end_date={this.state.funding_end_date}
+          title={this.state.title}
+          renderErrors={this.renderErrors}
+         />
+      );
+    }
+  }
   componentWillMount() {
     this.props.clearErrors();
   }
@@ -69,53 +85,9 @@ class CompleteForm extends React.Component {
               </button>
             </div>
           </div>
-          <div className="forms-yo">
-            <div className="intro">
-              <h2>Let's get started.</h2>
-              <p>
-                Make a great first impression with
-                your project’s title and image.
-                Then set your funding goal, campaign duration,
-                and project category.
-              </p>
-            </div>
-            <div className="basics-form">
-              <label>Project image url</label>
-              <div className="form-wrapper">
-                <input type="text"></input>
-              </div>
-            </div>
-            <div className="basics-form">
-              <label>Project title</label>
-              <div className="form-wrapper">
-                <input type="text"></input>
-              </div>
-            </div>
-            <div className="basics-form">
-              <label>Short blurb</label>
-              <div className="form-wrapper">
-                <input type="text"></input>
-              </div>
-            </div>
-            <div className="basics-form">
-              <label>Category</label>
-              <div className="form-wrapper">
-                <input type="text"></input>
-              </div>
-            </div>
-            <div className="basics-form">
-              <label>Funding duration</label>
-              <div className="form-wrapper">
-                <input type="text"></input>
-              </div>
-            </div>
-            <div className="basics-form">
-              <label>Funding goal</label>
-              <div className="form-wrapper">
-                <input type="text"></input>
-              </div>
-            </div>
-          </div>
+
+          {this.basicsForm()}
+
         </section>
       </div>
     );
