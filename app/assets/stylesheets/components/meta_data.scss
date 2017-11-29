@@ -1,0 +1,38 @@
+.meta-container {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid black;
+  font-family: 'roboto', sans-serif;
+  display: flex;
+  padding: 0px 60px;
+}
+
+.meta-div {
+  padding: 24px 36px;
+  font-size: 14px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.meta-left {
+  border-right: 1px solid #DCDEDD;
+  padding: 24px 12px 24px 0px;
+}
+
+.meta-right {
+  border-left: 1px solid #DCDEDD;
+}
+
+.meta-mid {
+  border-left: 1px solid #DCDEDD;
+  border-right: 1px solid #DCDEDD;
+}
+
+.meta-p {
+  color: #656969;
+}
+
+.bold {
+  font-weight: 700;
+}

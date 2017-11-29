@@ -27,10 +27,10 @@
 //   color: #3D3D66;
 // }
 
-.form-button p:hover {
-  cursor: pointer;
-  color: #2752ff;
-}
+// .form-button p:hover {
+//   cursor: pointer;
+//   color: #2752ff;
+// }
 
 .form-button span {
   font-size: 10px;
@@ -109,10 +109,16 @@
 .all-forms button:focus {
   outline: 0;
   color: #2752ff;
+  background-color: rgba(240,240,240,0.6);
 }
 
 .all-forms button:active {
   border-left: 1px solid #dad7d4;
+}
+
+.all-forms button:hover {
+  cursor: pointer;
+  color: #2752ff;
 }
 
 .all-forms label:focus {

@@ -1,0 +1,13 @@
+.index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid black;
+  font-family: 'roboto', sans-serif;
+  min-height: 800px;
+}
+
+.index-nav {
+  display: flex;
+}
