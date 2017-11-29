@@ -13,6 +13,18 @@
   padding: 0px 60px 60px;
 }
 
+.index-category:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.index-category:focus {
+  outline: 0;
+  color: black;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
 .index-nav {
   display: flex;
   margin-bottom: 60px;
@@ -28,6 +40,7 @@
 
 .featured-project-img {
   width: 100%;
+  position: relative;
 }
 
 
@@ -36,5 +49,38 @@
   border: none;
   font: inherit;
   color: inherit;
+  position: relative;
+  top: 1px;
   padding-bottom: 6px;
+  border-radius: 0;
+  border-bottom: 1px solid #DCDEDD;
+}
+
+.projects-display {
+  display: flex;
+
+}
+
+.featured-project {
+  padding-right: 12px;
+}
+
+.project-sub-cats {
+  padding-left: 12px;
+}
+
+.project-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-name {
+  padding: 18px;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.project-name div {
+  background-color: white;
 }

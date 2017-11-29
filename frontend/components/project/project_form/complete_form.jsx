@@ -1,19 +1,22 @@
 
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 
 class CompleteForm extends React.Component {
   constructor (props) {
     super(props);
+
+    this.state = {
+      category_id: '',
+      short_blurb: '',
+      project_img_url: '',
+      project_details: '',
+      funding_goal: '',
+      funding_end_date: '',
+      title: '',
+      formType: 'basics',
+      processForm: this.props.processForm
+    };
   }
 
   componentWillMount() {
