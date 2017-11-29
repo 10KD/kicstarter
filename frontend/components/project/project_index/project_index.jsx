@@ -13,21 +13,22 @@ class ProjectsIndex extends React.Component {
         <div>
           <MetaDataContainer />
           <div className="index">
-            <container className="index-container">
+            <div className="index-container">
               <section className="index-nav">
-                <div>Music</div>
-                <div>Film</div>
-                <div>Arts</div>
-                <div>Pulishing</div>
-                <div>Design & Tech</div>
-                <div>Food & Craft</div>
-                <div>Comics & Illustration</div>
-                <div>Games</div>
+                <button className="index-category">Music</button>
+                <button className="index-category">Film</button>
+                <button className="index-category">Arts</button>
+                <button className="index-category">Publishing</button>
+                <button className="index-category">Design & Tech</button>
+                <button className="index-category">Food & Craft</button>
+                <button className="index-category">Comics & Illustration</button>
+                <button className="index-category">Games</button>
               </section>
-              {featuredProject.title}
+              <img className="featured-project-img" src={featuredProject.project_img_url}></img>
 
-            </container>
-          </div>  
+          </div>
+          </div>
+          <div className="index-footer">Recommended for you</div>
         </div>
       );
     } else {

@@ -5,9 +5,36 @@
   background-color: white;
   border-bottom: 1px solid black;
   font-family: 'roboto', sans-serif;
-  min-height: 800px;
+  line-height: 1.5;
+}
+
+.index-container {
+  max-width: 1246px;
+  padding: 0px 60px 60px;
 }
 
 .index-nav {
   display: flex;
+  margin-bottom: 60px;
+  height: 30px;
+  border-bottom: 1px solid #DCDEDD;
+  color: #9B9E9E;
+  font-weight: 300;
+}
+
+.index-footer {
+  height: 800px;
+}
+
+.featured-project-img {
+  width: 100%;
+}
+
+
+.index-category {
+  margin-right: 24px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding-bottom: 6px;
 }
