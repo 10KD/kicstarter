@@ -3,9 +3,9 @@ import CompleteForm from './complete_form';
 import { createProject } from '../../../actions/project_actions';
 import { clearErrors } from '../../../actions/session_actions';
 
-const mapStateToProps = (state) => ({
-  processForm: 'new',
-  errors: state.errors,
+const mapStateToProps = ({errors, session}) => ({
+  errors: errors,
+  currentUser: session.currentUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({

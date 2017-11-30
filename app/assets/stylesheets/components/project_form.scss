@@ -11,7 +11,7 @@
 
 .all-forms {
   width: 520px;
-  height: 700px;
+  // height: 700px;
   border: 1px solid black;
   margin: 60px;
   background-color: white;
@@ -102,8 +102,8 @@
   min-width: 130px;
 }
 
-.forms-yo {
-  padding: 0px 8px 18px;
+.basic-form {
+  padding: 0px 8px 10px;
 }
 
 .all-forms button:focus {
@@ -132,7 +132,7 @@
 }
 
 
-.form-wrapper input {
+.form-wrapper input, .basics-category {
   font-size: 14px;
   box-sizing: border-box;
   border: 1px solid #dad7d4;
@@ -140,9 +140,52 @@
   padding: 10px;
   line-height: 18px;
   width: 100%;
+  transition: all 0.3s;
 }
 
-.form-wrapper input:focus {
+.form-wrapper input:focus, .basics-category:focus {
   outline: 0;
   border-color: #2752ff;
+}
+
+.form-wrapper p {
+  line-height: 16px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.form-wrapper textarea {
+  height: 300px;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 18px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #dad7d4;
+    font-size: 14px;
+    resize: none;
+}
+
+.form-wrapper textarea:focus {
+  outline: none;
+
+}
+.basics-category {
+  height: 40px;
+  background-color: white;
+}
+
+.next {
+  font-weight: 700;
+  justify-content: center;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  transition: all 0.25s;
+}
+
+.next:hover {
+  
+  transform: translateY(-1px);
 }

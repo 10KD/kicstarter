@@ -31,8 +31,8 @@ export const fetchAllProjects = () => dispatch => (
 );
 
 export const createProject = (project) => dispatch => (
-  ApiUtil.createProject(project).then(project1 => dispatch(receiveOneProject(project1))),
-  err => (dispatch(receiveErrors(err.responseJSON)))
+  ApiUtil.createProject(project).then(project1 => dispatch(receiveOneProject(project1)),
+  err => (dispatch(receiveErrors(err.responseJSON))))
 );
 
 export const fetchOneProject = (project) => dispatch => (
@@ -40,8 +40,8 @@ export const fetchOneProject = (project) => dispatch => (
 );
 
 export const editProject = (project) => dispatch => (
-  ApiUtil.updateProject(project).then(project1 => dispatch(updateProject(project1))),
-  err => (dispatch(receiveErrors(err.responseJSON)))
+  ApiUtil.updateProject(project).then(project1 => dispatch(updateProject(project1)),
+  err => (dispatch(receiveErrors(err.responseJSON))))
 );
 
 export const deleteProject = (project) => dispatch => (
