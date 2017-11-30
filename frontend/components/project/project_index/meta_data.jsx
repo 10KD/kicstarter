@@ -14,7 +14,7 @@ let monthStrings = [
 let displayDate = `${monthStrings[month]} ${th}, ${year}`;
 export default () => (
   <section className="meta-data">
-    <container className="meta-container">
+    <div className="meta-container">
       <div className="meta-div meta-left">
         <p className="meta-p">
           {displayDate}
@@ -35,6 +35,6 @@ export default () => (
         <p className="meta-p">LIVE PROJECTS</p>
         <p className="bold">5,143</p>
       </div>
-    </container>
+    </div>
   </section>
 );

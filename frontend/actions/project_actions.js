@@ -35,8 +35,8 @@ export const createProject = (project) => dispatch => (
   err => (dispatch(receiveErrors(err.responseJSON))))
 );
 
-export const fetchOneProject = (project) => dispatch => (
-  ApiUtil.fetchOneProject(project).then(project1 => dispatch(receiveOneProject(project1)))
+export const fetchOneProject = (id) => dispatch => (
+  ApiUtil.fetchOneProject(id).then(project1 => dispatch(receiveOneProject(project1)))
 );
 
 export const editProject = (project) => dispatch => (

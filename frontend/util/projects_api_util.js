@@ -13,9 +13,9 @@ export const createProject = (project) => (
   })
 );
 
-export const fetchOneProject = (project) => (
+export const fetchOneProject = (id) => (
   $.ajax({
-    url: `api/projects/${project.id}`,
+    url: `api/projects/${id}`,
     method: "GET",
   })
 );
