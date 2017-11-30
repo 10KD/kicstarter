@@ -57,7 +57,12 @@ class CompleteForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     // this.setState({ ['formType']: "basics" });
-    this.props.createProject(this.state);
+    this.props.createProject(this.state).then(object => {
+      console.log(object.project);
+      console.log(object.project.id);
+      return this.props.history.push(`/projects/${object.project.id}`);
+    }
+    );
   }
   handleInput(key) {
     return e => this.setState({ [key]: e.currentTarget.value });
