@@ -23,12 +23,17 @@ Kicstarter was created in 8 days by Don Kim.
 * Trying to access the login page while already logged in will redirect you to the index page.
 
 To achieve this, I created two utilities: Auth routes (routes that cannot be accessed while logged in) and Proteced routes (routes that are only accessible while logged in). Both utilies get a boolean state mapped to them, which indicates whether or not a user is logged in. They then redirect to the appropriate destination depending on the boolean. After I created those routes, the implementation was fairly straightforward. I componentized each route and nested them under a switch like so:
+```ruby
+<Switch>
+  <ProtectedRoute path="/new" component={CompleteFormContainer} />
+  <AuthRoute path="/login" component={SessionFormContainer} />
+  <AuthRoute path="/signup" component={SessionFormContainer} />
+  <Route path="/projects/:id/" component={ProjectContainer} />
+  <Route exact path="/" component={ProjectsIndexContainer} />
+</Switch>
+```
 
-    `<Switch>
-      <ProtectedRoute path="/new" component={CompleteFormContainer} />
-      <AuthRoute path="/login" component={SessionFormContainer} />
-      <AuthRoute path="/signup" component={SessionFormContainer} />
-      <Route path="/projects/:id/" component={ProjectContainer} />
-      <Route exact path="/" component={ProjectsIndexContainer} />
-    </Switch>`
+
+    
+    
 
