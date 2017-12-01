@@ -50,7 +50,7 @@ const Auth = ({component: Component, path, loggedIn}) => (
 
 ### Projects
 
-To create projects, I implemented a project form component. The form component provides relevant forms under different tabs to input information regarding the project. By nesting all the relevant pages under one concise component, I was able to avoid needing to create a large form that requires you to scroll up and down the page repeatedly in order to create a project. To achieve this, I stored a key value pair indicating which form should be rendered depending on what tab the user clicks on. 
+To create projects, I implemented a project form component. The form component provides relevant forms under different tabs to input information regarding the project. By nesting all of the relevant pages under one concise component, I was able to avoid needing to create a large form that requires you to scroll up and down the page in order to create a project. To achieve this, I stored a key value pair indicating which form should be rendered depending on what tab the user clicks on. 
 
 ```ruby
 basicsForm () {
