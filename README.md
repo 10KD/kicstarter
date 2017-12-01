@@ -24,7 +24,7 @@ Kicstarter was created in 8 days by Don Kim.
 
 To achieve this, I created two utilities: Auth routes (routes that cannot be accessed while logged in) and Proteced routes (routes that are only accessible while logged in). Both utilies get a boolean state mapped to them, which indicates whether or not a user is logged in. They then return the component or redirect to the appropriate destination depending on the boolean. After I created those routes, the implementation was fairly straightforward. I componentized each route and nested them under a switch like so:
 ```ruby
-// route_util.jsx
+# route_util.jsx
 
 const Auth = ({component: Component, path, loggedIn}) => (
   <Route path={path} render={(props) => (
@@ -37,7 +37,7 @@ const Auth = ({component: Component, path, loggedIn}) => (
 );
 
 
-// app.jsx
+# app.jsx
 
 <Switch>
   <ProtectedRoute path="/new" component={CompleteFormContainer} />
