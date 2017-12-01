@@ -60,7 +60,10 @@ class SessionForm extends React.Component {
 
   guestLogin(e) {
     e.preventDefault();
-    const guest = { user: { username: "guest", password: "555555"} };
+    let num = Math.floor(Math.random() * 7) + 1;
+    console.log(num);
+    console.log(num);
+    const guest = { user: { username: `guest${num}`, password: "555555"} };
     this.props.login(guest);
   }
 
