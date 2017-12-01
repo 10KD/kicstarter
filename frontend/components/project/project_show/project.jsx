@@ -102,32 +102,55 @@ export default class Project extends React.Component {
               </section>
             </div>
             <section className="show-lowerhalf">
-              <div>
-                <h3>About</h3>
-                {/* <p>
-                  On lonely highways,
-                  giants lurk along roads and ghosts linger in rest stops.
-                  A deadly fire meets its grave in the green bay,
-                  where love blooms between a woman and a spirit in the water.
-                  Forgotten shores and talk of snake mountain,
-                  voices from the past and a train ride with the Jersey Devil…
-                  <br></br>
-                  <br></br>
-                  Personal folklore, local legends,
-                  and reimagined stories all come together in one exciting,
-                  new visual anthology.
-                </p> */}
-                <p>{project.project_details}</p>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    Rewards List Item
-                    <img src="http://lootjunkie.xyz/images/loot-box.png"></img>
-                  </li>
-                </ul>
-              </div>
+              <div className="show-lowercontainer">
+                <div className="show-details">
+                  <h3>About</h3>
+                  {/* <p>
+                    On lonely highways,
+                    giants lurk along roads and ghosts linger in rest stops.
+                    A deadly fire meets its grave in the green bay,
+                    where love blooms between a woman and a spirit in the water.
+                    Forgotten shores and talk of snake mountain,
+                    voices from the past and a train ride with the Jersey Devil…
+                    <br></br>
+                    <br></br>
+                    Personal folklore, local legends,
+                    and reimagined stories all come together in one exciting,
+                    new visual anthology.
+                  </p> */}
+                  <p>{project.project_details}</p>
+                </div>
+                <div className="show-rewards">
+                  <div className="show-reward">
 
+
+                        <h3>Support</h3>
+                        <ol className="rewards-list">
+                          <li>
+                            <img
+                              src="http://lootjunkie.xyz/images/loot-box.png">
+
+                            </img>
+                          </li>
+                          <li>
+                            <img
+                              src="http://lootjunkie.xyz/images/loot-box.png">
+
+                            </img>
+                          </li>
+                          <li>
+                            <img
+                              src="http://lootjunkie.xyz/images/loot-box.png">
+
+                            </img>
+                          </li>
+                        </ol>
+
+
+
+                  </div>
+                </div>
+              </div>
             </section>
           </div>
         );
