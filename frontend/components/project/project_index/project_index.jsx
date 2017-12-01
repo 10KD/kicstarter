@@ -1,5 +1,5 @@
 import React from 'react';
-import MetaDataContainer from './meta_data';
+import { MetaDataContainer } from './meta_data';
 
 class ProjectsIndex extends React.Component {
   componentDidMount() {

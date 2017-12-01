@@ -91,7 +91,9 @@ export default class BasicsForm extends React.Component {
             <input
               type="date"
               value={this.props.funding_end_date}
-              onChange={this.props.handleInput("funding_end_date")}>
+              onChange={this.props.handleInput("funding_end_date")}
+              min={(new Date()).toJSON().slice(0,10)}
+              >
 
               </input>
           </div>

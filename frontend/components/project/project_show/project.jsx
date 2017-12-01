@@ -1,6 +1,9 @@
 import React from 'react';
 
 
+
+
+
 export default class Project extends React.Component {
 
   componentWillMount() {
@@ -30,6 +33,19 @@ export default class Project extends React.Component {
     ];
 
       if (project) {
+
+        let date = new Date(project.funding_end_date);
+        let th = date.getDate();
+        let month = date.getMonth();
+        let year = date.getFullYear();
+        let monthStrings = [
+          "January", "February", "March",
+        "April", "May", "June", "July",
+        "August", "September", "October",
+        "November", "December"
+        ];
+
+        let displayDate = `${monthStrings[month]} ${th}, ${year}`;
 
         const remainingDays = Math.ceil((
           (new Date(project.funding_end_date) - new Date()) / 86400000
@@ -94,7 +110,7 @@ export default class Project extends React.Component {
                       <p>
                         All or nothing.
                         This project will only be funded if
-                        it reaches its goal by Wed, December 13 2017
+                        it reaches its goal by {displayDate}
                       </p>
                     </div>
                   </div>

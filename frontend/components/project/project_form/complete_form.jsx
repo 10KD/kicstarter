@@ -15,7 +15,7 @@ class CompleteForm extends React.Component {
       project_img_url: 'https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg',
       project_details: '',
       funding_goal: '',
-      funding_end_date: '',
+      funding_end_date: `${(new Date()).toJSON().slice(0,10)}`,
       title: '',
       formType: 'basics',
       processForm: "new"

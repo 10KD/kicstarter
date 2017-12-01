@@ -12,7 +12,7 @@ let monthStrings = [
 ];
 
 let displayDate = `${monthStrings[month]} ${th}, ${year}`;
-export default () => (
+export const MetaDataContainer = () => (
   <section className="meta-data">
     <div className="meta-container">
       <div className="meta-div meta-left">
