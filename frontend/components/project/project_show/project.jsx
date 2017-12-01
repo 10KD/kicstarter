@@ -15,6 +15,12 @@ export default class Project extends React.Component {
     this.props.fetchOneProject(this.props.match.params.id);
   }
 
+  componentWillReceiveProps(newProps) {
+    if (this.props.match.params.id !== newProps.match.params.id) {
+      this.props.fetchOneProject(newProps.match.params.id);
+    }
+  }
+
   render() {
 
     const project = this.props.project;
