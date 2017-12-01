@@ -1,24 +1,20 @@
-# README
+# Kicstarter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Kicstarter is a crowdfunding platform inspired by Kickstarter. It's a fullstack application built with a Ruby on Rails backend, PostgreSQL database, and React-Redux on the frontend. Much like Kickstarter, users can create projects with fund raising goals which other users can back / contribute toward. 
 
-Things you may want to cover:
+Kicstarter was created in 8 days by Don Kim.
 
-* Ruby version
+--pic--
 
-* System dependencies
+# Features 
 
-* Configuration
+* Creating and logging in User accounts, Secure authentication.
+* Create and view projects. 
+* Image link for projects. 
+* Filter by project category. 
 
-* Database creation
 
-* Database initialization
+# Implementation 
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
