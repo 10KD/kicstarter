@@ -16,29 +16,89 @@ export default class Project extends React.Component {
       if (project) {
         return (
           <div className="project-show">
-            <section className="show-upperhalf">
-              <div className="upper-upperhalf">
-                <div className="username">
-                  <p>by <span>{this.props.currentUser.username}</span></p>
+            <div className="show-upperhalf">
+              <section className="show-upper-container">
+                <div className="upper-upperhalf">
+                  <div className="show-username">
+                    <p>by <span>{this.props.currentUser.username}</span></p>
+                  </div>
+                  <div className="show-title">
+                    {/* <h2>{project.title}</h2> */}
+                    <h2>
+                      The Sun and the Wayward Wind: Relaunch
+                    </h2>
+                    {/* <p>{project.short_blurb}</p> */}
+                    <p>
+                      A visual anthology of legends and
+                      lore from creators throughout North America.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h2>{project.title}</h2>
-                  <p>{project.short_blurb}</p>
+                <div className="upper-lowerhalf">
+                  <div className="show-img-container">
+                    <img src={project.project_img_url}></img>
+                    <div className="show-category">
+                      <div className="icon">
+                        <i className="fa fa-compass" aria-hidden="true"></i>
+                      </div>
+                      <div> Publishing
+                    {/* {project.category_id} */}
+
+                      </div>
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <div className="stats-box">
+                      <div className="progress-bar">
+                        <div className="progress-color"></div>
+                      </div>
+                      <div className="stats">
+                        <div className="stat">
+                          <span className="pledge-amt">$12,408</span>
+                          <span className="pledge-sub">pledged of
+                            <span> $19,000 </span> goal</span>
+                        </div>
+                        <div className="stat">
+                          <span>327</span>
+                          <span className="pledge-sub">backers</span>
+                        </div>
+                        <div className="stat">
+                          <span>12</span>
+                          <span className="pledge-sub">days to go</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="back-this">
+                      <button>
+                        Back this project
+                      </button>
+                      <p>
+                        All or nothing.
+                        This project will only be funded if
+                        it reaches its goal by Wed, December 13 2017
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div>
-                  <img src={project.project_img_url}></img>
-                  <div>project info</div>
-                </div>
-                <div>
-                  {project.category_id}
-                </div>
-              </div>
-            </section>
+              </section>
+            </div>
             <section className="show-lowerhalf">
               <div>
-                <p>{project.project_details}</p>
+                <h3>About</h3>
+                <p>
+                  On lonely highways,
+                  giants lurk along roads and ghosts linger in rest stops.
+                  A deadly fire meets its grave in the green bay,
+                  where love blooms between a woman and a spirit in the water.
+                  Forgotten shores and talk of snake mountain,
+                  voices from the past and a train ride with the Jersey Devil…
+                  <br></br>
+                  <br></br>
+                  Personal folklore, local legends,
+                  and reimagined stories all come together in one exciting,
+                  new visual anthology.
+                </p>
+                {/* <p>{project.project_details}</p> */}
               </div>
               <div>
                 <ul>

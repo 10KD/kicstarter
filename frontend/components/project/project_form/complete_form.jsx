@@ -12,7 +12,7 @@ class CompleteForm extends React.Component {
       user_id: this.props.currentUser.id,
       category_id: 1,
       short_blurb: '',
-      project_img_url: '',
+      project_img_url: 'https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg',
       project_details: '',
       funding_goal: '',
       funding_end_date: '',
