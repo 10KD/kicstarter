@@ -57,7 +57,7 @@ export default class Project extends React.Component {
               <section className="show-upper-container">
                 <div className="upper-upperhalf">
                   <div className="show-username">
-                    <p>by <span>{this.props.currentUser.username}</span></p>
+                    <p>by <span>{this.props.project.user.username}</span></p>
                   </div>
                   <div className="show-title">
                     <h2>{project.title}</h2>

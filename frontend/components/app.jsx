@@ -14,9 +14,9 @@ export default () => (
       <NavContainer />
     </header>
     <Switch>
+      <ProtectedRoute path="/new" component={CompleteFormContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
-      <ProtectedRoute path="/new" component={CompleteFormContainer} />
       <Route path="/projects/:id/" component={ProjectContainer} />
       <Route exact path="/" component={ProjectsIndexContainer} />
     </Switch>
