@@ -15,13 +15,26 @@ export default class Project extends React.Component {
   render() {
 
     const project = this.props.project;
+    const categories = [
+      "Arts",
+      "Comics",
+      "Craft",
+      "Design",
+      "Film",
+      "Food",
+      "Games",
+      "Illustration",
+      "Music",
+      "Publishing",
+      "Tech",
+    ];
 
       if (project) {
 
         const remainingDays = Math.ceil((
           new Date(project.funding_end_date) - new Date() / 86400000
         ));
-        
+
         return (
           <div className="project-show">
             <div className="show-upperhalf">
@@ -31,15 +44,15 @@ export default class Project extends React.Component {
                     <p>by <span>{this.props.currentUser.username}</span></p>
                   </div>
                   <div className="show-title">
-                    {/* <h2>{project.title}</h2> */}
-                    <h2>
+                    <h2>{project.title}</h2>
+                    {/* <h2>
                       The Sun and the Wayward Wind: Relaunch
-                    </h2>
-                    {/* <p>{project.short_blurb}</p> */}
-                    <p>
+                    </h2> */}
+                    <p>{project.short_blurb}</p>
+                    {/* <p>
                       A visual anthology of legends and
                       lore from creators throughout North America.
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="upper-lowerhalf">
@@ -49,10 +62,8 @@ export default class Project extends React.Component {
                       <div className="icon">
                         <i className="fa fa-compass" aria-hidden="true"></i>
                       </div>
-                      <div> Publishing
-                    {/* {project.category_id} */}
-
-                      </div>
+                      {/* <div> Publishing </div> */}
+                    <div>{categories[project.category_id + 1]}</div>
                     </div>
                   </div>
                   <div className="project-info">
@@ -93,7 +104,7 @@ export default class Project extends React.Component {
             <section className="show-lowerhalf">
               <div>
                 <h3>About</h3>
-                <p>
+                {/* <p>
                   On lonely highways,
                   giants lurk along roads and ghosts linger in rest stops.
                   A deadly fire meets its grave in the green bay,
@@ -105,8 +116,8 @@ export default class Project extends React.Component {
                   Personal folklore, local legends,
                   and reimagined stories all come together in one exciting,
                   new visual anthology.
-                </p>
-                {/* <p>{project.project_details}</p> */}
+                </p> */}
+                <p>{project.project_details}</p>
               </div>
               <div>
                 <ul>
