@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export default class Project extends React.Component {
 
   componentWillMount() {
@@ -12,8 +13,15 @@ export default class Project extends React.Component {
   }
 
   render() {
+
     const project = this.props.project;
+
       if (project) {
+
+        const remainingDays = Math.ceil((
+          new Date(project.funding_end_date) - new Date() / 86400000
+        ));
+        
         return (
           <div className="project-show">
             <div className="show-upperhalf">
@@ -63,7 +71,7 @@ export default class Project extends React.Component {
                           <span className="pledge-sub">backers</span>
                         </div>
                         <div className="stat">
-                          <span>12</span>
+                          <span>{remainingDays}</span>
                           <span className="pledge-sub">days to go</span>
                         </div>
                       </div>
