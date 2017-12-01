@@ -32,7 +32,7 @@ export default class Project extends React.Component {
       if (project) {
 
         const remainingDays = Math.ceil((
-          new Date(project.funding_end_date) - new Date() / 86400000
+          (new Date(project.funding_end_date) - new Date()) / 86400000
         ));
 
         return (
