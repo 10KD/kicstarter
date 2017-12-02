@@ -227,7 +227,8 @@
 
 .rec-container {
   padding: 60px;
-  width: 1282px;
+  min-width: 1282px;
+  max-width: 1282px;
 
 }
 
