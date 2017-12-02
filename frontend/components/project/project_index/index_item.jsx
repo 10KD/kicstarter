@@ -11,39 +11,103 @@ export default class IndexItem extends React.Component {
     return (
       <div className="projects-display">
         <div className="featured-project">
-          <header>FEATURED PROJECT</header>
+          <header className="featured-header">FEATURED PROJECT</header>
         <Link to={`/projects/${featuredProject.id}`}>
         <div className="project-container">
             <img className="featured-project-img" src={featuredProject.project_img_url}></img>
           <div className="project-name">
               <div>
               <p>
-              <span>{featuredProject.title}</span>
+              <span className="project-information">{featuredProject.title}</span>
               <br></br>
-              <span>{featuredProject.user.username}</span>
+            <span className="project-information maker">by {featuredProject.user.username}</span>
               </p>
               </div>
-              <div>{fundedAmt}% FUNDED</div>
+              <div className="project-funded">
+
+                  {fundedAmt}% FUNDED
+
+              </div>
             </div>
           </div>
         </Link>
         </div>
         <div className="project-sub-cats">
-          <Link to={`/projects/${subProject.id}`}>
-          <div className="project-container">
-              <img className="featured-project-img" src={subProject.project_img_url}></img>
-            <div className="project-name">
-                <div>
-                <p>
-                <span>{subProject.title}</span>
-                <br></br>
-              <span>{subProject.user.username}</span>
-                </p>
+          <div className="index-nav sub-nav">
+            <button className="index-category sub-category"
+              type="submit"
+              value="new"
+              // onClick={this.handleInput("formType")}
+              >
+              NEW & NOTEWORTHY</button>
+          </div>
+
+          <ul className="sub-projects">
+            <li>
+              <div className="sub-projects-link">
+                <Link to={`/projects/${subProject.id}`}
+                className="sub-project-link">
+                  <img className="sub-project-img"
+                    src={subProject.project_img_url}></img>
+                </Link>
+                <div className="sub-projects-title">
+                  <Link to={`/projects/${subProject.id}`}>
+                  {subProject.title}</Link>
+                  <div>{fundedAmt2}% funded</div>
                 </div>
-                <div>{fundedAmt2}% FUNDED</div>
+                <div className="placeholder-heart-icon">
+                </div>
               </div>
-            </div>
-          </Link>
+            </li>
+            <li>
+              <div className="sub-projects-link">
+                <Link to={`/projects/${projects[3].id}`}
+                className="sub-project-link">
+                  <img className="sub-project-img"
+                    src={projects[3].project_img_url}></img>
+                </Link>
+                <div className="sub-projects-title">
+                  <Link to={`/projects/${projects[3].id}`}>
+                  {subProject.title}</Link>
+                  <div>{fundedAmt2}% funded</div>
+                </div>
+                <div className="placeholder-heart-icon">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="sub-projects-link">
+                <Link to={`/projects/${projects[4].id}`}
+                className="sub-project-link">
+                  <img className="sub-project-img"
+                    src={projects[4].project_img_url}></img>
+                </Link>
+                <div className="sub-projects-title">
+                  <Link to={`/projects/${projects[4].id}`}>
+                  {subProject.title}</Link>
+                  <div>{fundedAmt2}% funded</div>
+                </div>
+                <div className="placeholder-heart-icon">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="sub-projects-link">
+                <Link to={`/projects/${projects[2].id}`}
+                className="sub-project-link">
+                  <img className="sub-project-img"
+                    src={projects[2].project_img_url}></img>
+                </Link>
+                <div className="sub-projects-title">
+                  <Link to={`/projects/${projects[2].id}`}>
+                  {subProject.title}</Link>
+                  <div>{fundedAmt2}% funded</div>
+                </div>
+                <div className="placeholder-heart-icon">
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     );

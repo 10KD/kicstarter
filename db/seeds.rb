@@ -91,6 +91,14 @@ Project.create(user_id: rand(1...7), category_id: 2, funding_goal: 500,
   project_details: "I am a cartoonist making comics for the past 10 years. Last year you helped me print a mess of these Thumb Books for a lot of cartoonists, designers, students... and, well I ran out of them.  Thusly I'm here to do it again!",
   funding_end_date: "03/02/2019",
   project_img_url: "https://ksr-ugc.imgix.net/assets/019/392/484/3c02e2e85cb20c4141b3e5c974a98859_original.jpg?w=680&fit=max&v=1511754975&auto=format&q=92&s=719419959bc83bcb33a5251b72a8528c")
+Project.create(user_id: rand(1...7), category_id: 2, funding_goal: 3495,
+  title: "Crestfallen issue #1",
+  short_blurb: "A comic book set in an epic world of high-fantasy! Follow five unlikley heroes as they begin their journey in a world set aflame!",
+  project_details: "Crestfallen is comic book that follow five protagonists as they are forced upon a journey through the high-fantasy world of Alfta.
+
+We will follow a nobleman, an assassin, a barbarian, a slave and a strange hermit - as they introduce us all to this new world.",
+  funding_end_date: "04/02/2018",
+  project_img_url: "https://ksr-ugc.imgix.net/assets/019/032/100/90f2a8d3f95deb71909b418a3f78c776_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1510611453&auto=format&q=92&s=97ad731f2800080c359ce0df820c0ca6")
 
 Project.create(user_id: rand(1...7), category_id: 3, funding_goal: 6000,
   title: "my test project1", short_blurb: "this is a test project hello world",

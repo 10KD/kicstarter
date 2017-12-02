@@ -38,10 +38,6 @@
   height: 800px;
 }
 
-.featured-project-img {
-  width: 100%;
-  position: relative;
-}
 
 
 .index-category {
@@ -62,7 +58,22 @@
 }
 
 .featured-project {
-  padding-right: 12px;
+  padding-right: 18px;
+  width: calc(12/24 * 100%);
+  padding-bottom: 18px;
+}
+
+.featured-project-img {
+  // width: 100%;
+  position: relative;
+  max-height: 605px;
+  // margin-bottom: 18px;
+}
+
+.featured-header {
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .project-container:hover {
@@ -75,21 +86,111 @@
 
 
 .project-sub-cats {
-  padding-left: 12px;
+  padding-left: 18px;
+  width: calc(12/24 * 100%);
 }
 
 .project-container {
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .project-name {
   padding: 18px;
   position: absolute;
   bottom: 0;
-
+  left: 0;
 }
 
-.project-name div {
+// .project-name br {
+//   display: block;
+// }
+
+.project-information {
+  box-shadow: white 12px 0px 0px, white -12px 0px 0px;
+  padding: 6px 0px;
+  position: relative;
+  font-size: 28px;
+  left: 12px;
   background-color: white;
+}
+.maker {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.project-funded {
+  background-color: white;
+  margin-top: 12px;
+  padding: 6px 12px;
+  width: max-content;
+}
+
+.sub-category {
+  // margin-bottom: 12px;
+  margin-right: 18px;
+  font-size: 13px;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.sub-nav {
+  margin-bottom: 0px;
+}
+
+.sub-projects {
+  margin-bottom: 18px;
+  list-style: none;
+  list-style-type: none;
+}
+
+.sub-projects li {
+  padding: 18px 0px;
+  border-bottom: 1px solid #DCDEDD;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sub-projects-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.sub-project-link {
+  margin-right: 24px;
+  flex-basis: 20%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sub-projects-title {
+  flex-basis: 60%;
+}
+
+.sub-projects-title a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sub-projects-title div {
+  color: #9B9E9E;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.sub-project-img {
+  max-width: 100%;
+}
+
+.placeholder-heart-icon {
+  height: 36px;
+  width: 36px;
+  padding-left: 36px;
 }

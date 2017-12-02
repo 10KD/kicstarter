@@ -180,7 +180,7 @@ class ProjectsIndex extends React.Component {
               {this.gamesForm()}
             </div>
           </div>
-          {/* <div className="index-footer">Recommended for you</div> */}
+          <div className="index-footer">Recommended for you</div>
         </div>
       );
     } else {
