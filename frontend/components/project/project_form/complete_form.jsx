@@ -58,8 +58,8 @@ class CompleteForm extends React.Component {
     e.preventDefault();
     // this.setState({ ['formType']: "basics" });
     this.props.createProject(this.state).then(object => {
-      console.log(object.project);
-      console.log(object.project.id);
+      // console.log(object.project);
+      // console.log(object.project.id);
       return this.props.history.push(`/projects/${object.project.id}`);
     }
     );
