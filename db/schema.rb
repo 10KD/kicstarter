@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20171127214244) do
     t.integer "category_id", null: false
     t.integer "funding_goal", null: false
     t.string "project_img_url"
-    t.string "title", null: false
-    t.string "short_blurb", null: false
+    t.text "title", null: false
+    t.text "short_blurb", null: false
     t.text "project_details"
     t.date "funding_end_date", null: false
     t.datetime "created_at", null: false

@@ -7,6 +7,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import CompleteFormContainer from './project/project_form/complete_form_container';
 import ProjectsIndexContainer from './project/project_index/project_index_container';
 import ProjectContainer from './project/project_show/project_container';
+import FooterContainer from './footer';
 
 export default () => (
   <div>
@@ -20,7 +21,7 @@ export default () => (
       <Route path="/projects/:id/" component={ProjectContainer} />
       <Route exact path="/" component={ProjectsIndexContainer} />
     </Switch>
-    <div className="session-form-footer-footer"></div>
+    <FooterContainer />
 
   </div>
 );
