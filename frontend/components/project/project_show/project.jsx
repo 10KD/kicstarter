@@ -146,7 +146,7 @@ export default class Project extends React.Component {
                   <div className="show-reward">
 
 
-                        <h3>Support</h3>
+                        {/* <h3>Support</h3>
                         <ol className="rewards-list">
                           <li>
                             <img
@@ -166,7 +166,7 @@ export default class Project extends React.Component {
 
                             </img>
                           </li>
-                        </ol>
+                        </ol> */}
 
 
 
