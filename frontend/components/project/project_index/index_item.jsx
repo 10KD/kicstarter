@@ -51,7 +51,8 @@ export default class IndexItem extends React.Component {
                     src={subProject.project_img_url}></img>
                 </Link>
                 <div className="sub-projects-title">
-                  <Link to={`/projects/${subProject.id}`}>
+                  <Link to={`/projects/${subProject.id}`}
+                  className="sub-title-link">
                   {subProject.title}</Link>
                   <div>{fundedAmt2}% funded</div>
                 </div>
@@ -67,8 +68,9 @@ export default class IndexItem extends React.Component {
                     src={projects[3].project_img_url}></img>
                 </Link>
                 <div className="sub-projects-title">
-                  <Link to={`/projects/${projects[3].id}`}>
-                  {subProject.title}</Link>
+                  <Link to={`/projects/${projects[3].id}`}
+                  className="sub-title-link">
+                  {projects[3].title}</Link>
                   <div>{fundedAmt2}% funded</div>
                 </div>
                 <div className="placeholder-heart-icon">
@@ -83,8 +85,9 @@ export default class IndexItem extends React.Component {
                     src={projects[4].project_img_url}></img>
                 </Link>
                 <div className="sub-projects-title">
-                  <Link to={`/projects/${projects[4].id}`}>
-                  {subProject.title}</Link>
+                  <Link to={`/projects/${projects[4].id}`}
+                  className="sub-title-link">
+                  {projects[4].title}</Link>
                   <div>{fundedAmt2}% funded</div>
                 </div>
                 <div className="placeholder-heart-icon">
@@ -99,8 +102,9 @@ export default class IndexItem extends React.Component {
                     src={projects[2].project_img_url}></img>
                 </Link>
                 <div className="sub-projects-title">
-                  <Link to={`/projects/${projects[2].id}`}>
-                  {subProject.title}</Link>
+                  <Link to={`/projects/${projects[2].id}`}
+                  className="sub-title-link">
+                  {projects[2].title}</Link>
                   <div>{fundedAmt2}% funded</div>
                 </div>
                 <div className="placeholder-heart-icon">
@@ -108,6 +112,7 @@ export default class IndexItem extends React.Component {
               </div>
             </li>
           </ul>
+          {/* <Link to="/" className="view-all">VIEW ALL</Link> */}
         </div>
       </div>
     );

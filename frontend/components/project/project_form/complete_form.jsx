@@ -130,7 +130,7 @@ class CompleteForm extends React.Component {
 
           </section>
         </div>
-        <div className="session-form-footer-footer"></div>
+        
       </div>
     );
   }

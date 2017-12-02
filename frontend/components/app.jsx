@@ -20,6 +20,7 @@ export default () => (
       <Route path="/projects/:id/" component={ProjectContainer} />
       <Route exact path="/" component={ProjectsIndexContainer} />
     </Switch>
+    <div className="session-form-footer-footer"></div>
 
   </div>
 );

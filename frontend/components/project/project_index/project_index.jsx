@@ -1,6 +1,7 @@
 import React from 'react';
 import { MetaDataContainer } from './meta_data';
 import IndexItem from './index_item';
+import RecItem from './rec_item';
 
 class ProjectsIndex extends React.Component {
   constructor(props) {
@@ -22,14 +23,42 @@ class ProjectsIndex extends React.Component {
   projArr() {
     return Object.values(this.props.projects);
   }
+  // listenForm() {
+  //   const categories = [
+  //     "arts",
+  //     "comics",
+  //     "craft",
+  //     "design",
+  //     "film",
+  //     "food",
+  //     "games",
+  //     "illustration",
+  //     "music",
+  //     "publishing",
+  //     "tech",
+  //   ];
+  //
+  //
+  //     const catId = (categories.indexOf(this.state.formType) + 1);
+  //
+  //
+  //     const projectsArr = this.projArr();
+  //     const artsProjects = projectsArr.filter(proj => proj.category_id === catId);
+  //     return (
+  //       <IndexItem
+  //         projects={artsProjects}
+  //       />
+  //     );
+  //
+  // }
 
   artsForm() {
     if (this.state.formType === "arts") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 1);
+      const projects = projectsArr.filter(proj => proj.category_id === 1);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
@@ -38,10 +67,10 @@ class ProjectsIndex extends React.Component {
   comicsAndIllForm() {
     if (this.state.formType === "comicsill") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 2);
+      const projects = projectsArr.filter(proj => proj.category_id === 2);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
@@ -50,10 +79,10 @@ class ProjectsIndex extends React.Component {
   musicForm() {
     if (this.state.formType === "music") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 9);
+      const projects = projectsArr.filter(proj => proj.category_id === 9);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
@@ -62,10 +91,10 @@ class ProjectsIndex extends React.Component {
   filmForm() {
     if (this.state.formType === "film") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 5);
+      const projects = projectsArr.filter(proj => proj.category_id === 5);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
@@ -74,10 +103,10 @@ class ProjectsIndex extends React.Component {
   publishingForm() {
     if (this.state.formType === "publishing") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 10);
+      const projects = projectsArr.filter(proj => proj.category_id === 10);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
@@ -86,10 +115,10 @@ class ProjectsIndex extends React.Component {
   designTechForm() {
     if (this.state.formType === "designtech") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 4);
+      const projects = projectsArr.filter(proj => proj.category_id === 4);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
@@ -98,10 +127,10 @@ class ProjectsIndex extends React.Component {
   foodCraftForm() {
     if (this.state.formType === "foodcraft") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 6);
+      const projects = projectsArr.filter(proj => proj.category_id === 6);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
@@ -110,13 +139,24 @@ class ProjectsIndex extends React.Component {
   gamesForm() {
     if (this.state.formType === "games") {
       const projectsArr = this.projArr();
-      const artsProjects = projectsArr.filter(proj => proj.category_id === 7);
+      const projects = projectsArr.filter(proj => proj.category_id === 7);
       return (
         <IndexItem
-          projects={artsProjects}
+          projects={projects}
         />
       );
     }
+  }
+  craftForm() {
+    // if (this.state.formType === "games") {
+      const projectsArr = this.projArr();
+      const projects = projectsArr.filter(proj => proj.category_id === 3);
+      return (
+        <RecItem
+          projects={projects}
+        />
+      );
+    // }
   }
 
   render() {
@@ -170,6 +210,7 @@ class ProjectsIndex extends React.Component {
                   onClick={this.handleInput("formType")}>
                   Games</button>
               </section>
+              {/* {this.listenForm()} */}
               {this.artsForm()}
               {this.comicsAndIllForm()}
               {this.musicForm()}
@@ -180,7 +221,9 @@ class ProjectsIndex extends React.Component {
               {this.gamesForm()}
             </div>
           </div>
-          <div className="index-footer">Recommended for you</div>
+          <secion className="recommendations">
+            {this.craftForm()}
+          </secion>
         </div>
       );
     } else {

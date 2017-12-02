@@ -105,7 +105,7 @@ class SessionForm extends React.Component {
         <div className="session-form-footer">New to Kicstarter? {this.alternate()}</div>
       </div>
 
-      <div className="session-form-footer-footer"></div>
+    
     </div>
 
       );
@@ -145,7 +145,7 @@ class SessionForm extends React.Component {
 </form>
 </div>
 
-          <div className="session-form-footer-footer"></div>
+
         </div>
       );
     }
