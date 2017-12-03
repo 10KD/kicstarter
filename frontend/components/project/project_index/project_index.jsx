@@ -8,7 +8,7 @@ class ProjectsIndex extends React.Component {
     super(props);
 
     this.state = {
-      formType: 'arts',
+      formType: 'publishing',
     };
     this.handleInput = this.handleInput.bind(this);
   }

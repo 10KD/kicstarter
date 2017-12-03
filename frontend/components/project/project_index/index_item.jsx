@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default class IndexItem extends React.Component {
   render () {
     const projects = this.props.projects;
-    const featuredProject = projects[1];
-    const subProject = projects[0];
+    const featuredProject = projects[0];
+    const subProject = projects[1];
     const fundedAmt = Math.floor(Math.random() * 200) + 1;
     const fundedAmt2 = Math.floor(Math.random() * 200) + 1;
     return (

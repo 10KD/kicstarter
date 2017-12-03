@@ -7,6 +7,7 @@ class Project < ApplicationRecord
   validates :title, uniqueness: true
 
   belongs_to :user
+  has_many :rewards
 
   def days_left
     distance_of_time_in_words(Time.now, funding_end_date)

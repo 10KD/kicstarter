@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  pledge_amt: 1
+  description: MyString
+  limit: 1
+
+two:
+  title: MyString
+  pledge_amt: 1
+  description: MyString
+  limit: 1
