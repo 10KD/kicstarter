@@ -221,9 +221,9 @@ class ProjectsIndex extends React.Component {
               {this.gamesForm()}
             </div>
           </div>
-          <secion className="recommendations">
+          <section className="recommendations">
             {this.craftForm()}
-          </secion>
+          </section>
         </div>
       );
     } else {
