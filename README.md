@@ -4,7 +4,7 @@ Kicstarter is a crowdfunding platform inspired by Kickstarter. It's a fullstack 
 
 Kicstarter was created in 8 days by Don Kim.
 
-![](https://raw.githubusercontent.com/10KD/FSP/master/Screen%20Shot%202017-12-03%20at%202.06.19%20PM.png)
+[![](https://raw.githubusercontent.com/10KD/FSP/master/Screen%20Shot%202017-12-03%20at%202.06.19%20PM.png)](kicstarter.herokuapp.com)
 
 # Features 
 
