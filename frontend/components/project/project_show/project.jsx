@@ -85,7 +85,7 @@ export default class Project extends React.Component {
                         <i className="fa fa-compass" aria-hidden="true"></i>
                       </div>
                       {/* <div> Publishing </div> */}
-                    <div>{categories[project.category_id + 1]}</div>
+                    <div>{categories[project.category_id - 1]}</div>
                     </div>
                   </div>
                   <div className="project-info">
