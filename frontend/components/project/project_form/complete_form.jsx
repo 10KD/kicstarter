@@ -19,7 +19,7 @@ class CompleteForm extends React.Component {
       title: '',
       formType: 'basics',
       processForm: "new",
-      rewards_attributes: { project_id: null },
+      rewards_attributes: { project_id: null }, //incomplete - just started working on rewards
     };
     this.renderErrors = this.renderErrors.bind(this);
     this.handleInput = this.handleInput.bind(this);
@@ -98,7 +98,7 @@ class CompleteForm extends React.Component {
     if (this.props.projects[this.props.projects.length - 1] !== undefined) {
       this.state.rewards_attributes.project_id =
       this.props.projects[this.props.projects.length - 1].id + 1;
-      console.log(this.state);
+      
     }
 
     return (
