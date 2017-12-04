@@ -3,14 +3,14 @@ class Api::RewardsController < ApplicationController
   end
 
   def create
-
+    @reward = Reward.new(reward_params)
   end
 
   def destroy
 
   end
 
-  def rewards_params
+  def reward_params
     params.require(:reward).permit(
       :title, :reward_price, :description,
       :project_id, :limit, :delivery_estimate

@@ -18,7 +18,8 @@ class CompleteForm extends React.Component {
       funding_end_date: `${(new Date()).toJSON().slice(0,10)}`,
       title: '',
       formType: 'basics',
-      processForm: "new"
+      processForm: "new",
+      // rewards_attributes: { project_id: this.props.project_id },
     };
     this.renderErrors = this.renderErrors.bind(this);
     this.handleInput = this.handleInput.bind(this);
@@ -130,7 +131,7 @@ class CompleteForm extends React.Component {
 
           </section>
         </div>
-        
+
       </div>
     );
   }
