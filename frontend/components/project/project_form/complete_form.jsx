@@ -97,7 +97,7 @@ class CompleteForm extends React.Component {
   render () {
     if (this.props.projects[this.props.projects.length - 1] !== undefined) {
       this.state.rewards_attributes.project_id =
-      this.props.projects[this.props.projects.length - 1].id + ;
+      this.props.projects[this.props.projects.length - 1].id + 1;
       console.log(this.state);
     }
 
