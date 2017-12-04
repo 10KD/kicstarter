@@ -19,11 +19,19 @@ class CompleteForm extends React.Component {
       title: '',
       formType: 'basics',
       processForm: "new",
-      // rewards_attributes: { project_id: this.props.project_id },
+      rewards_attributes: { project_id: null },
     };
     this.renderErrors = this.renderErrors.bind(this);
     this.handleInput = this.handleInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  componentDidMount() {
+    this.props.getAllProjects();
+  }
+
+  componentWillMount() {
+
+    this.props.clearErrors();
   }
 
   basicsForm () {
@@ -55,6 +63,7 @@ class CompleteForm extends React.Component {
       );
     }
   }
+
   handleSubmit(e) {
     e.preventDefault();
     // this.setState({ ['formType']: "basics" });
@@ -65,12 +74,9 @@ class CompleteForm extends React.Component {
     }
     );
   }
+
   handleInput(key) {
     return e => this.setState({ [key]: e.currentTarget.value });
-  }
-  componentWillMount() {
-
-    this.props.clearErrors();
   }
 
   renderErrors() {
@@ -89,7 +95,14 @@ class CompleteForm extends React.Component {
   }
 
   render () {
+    if (this.props.projects[this.props.projects.length - 1] !== undefined) {
+      this.state.rewards_attributes.project_id =
+      this.props.projects[this.props.projects.length - 1].id + 1;
+      console.log(this.state);
+    }
+
     return (
+
       <div>
         <div className="complete-form">
           <section className="all-forms">
