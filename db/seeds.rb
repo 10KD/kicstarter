@@ -47,7 +47,6 @@ Project.create(user_id: rand(1...7), category_id: 1, funding_goal: 10000,
 We're so excited to finally bring this project to you!",
   funding_end_date: "05/09/2018",
   project_img_url: "https://s3-us-west-1.amazonaws.com/fspkicstarter/23f375073369672ce7652f0003452dea_original.jpg")
-
 Project.create(user_id: rand(1...7), category_id: 1, funding_goal: 4000,
   title: "Traditional oil paintings of Star Wars Lightsabers",
   short_blurb: "Prints of still life paintings of the Light sabers used in Star Wars Episode IV: A New Hope.",
@@ -254,18 +253,18 @@ Project.create(user_id: rand(1...7), category_id: 6, funding_goal: 77203,
   funding_end_date: "10/03/2018",
   project_img_url: "https://ksr-ugc.imgix.net/assets/018/808/647/d258153fe72839884770412a6f6fedf8_original.png?crop=faces&w=1024&h=576&fit=crop&v=1512064519&auto=format&q=92&s=75a9f1f9da0700c4af6aa37bcee2617d")
 
-Project.create(user_id: rand(1...7), category_id: 7, funding_goal: 100000,
-  title: "SORCERER",
-  short_blurb: "Sorcerer is a dark fantasy game that melds the best elements of a strategy card game with a tactical board game.",
-  project_details: "Sorcerer is a 2-4 player dark fantasy game from the creators of Star Realms. This new character building game combines the best elements of a strategy card game and a tactical board game to create a whole new play experience! ",
-  funding_end_date: "02/08/2018",
-  project_img_url: "https://ksr-ugc.imgix.net/assets/017/023/737/bdd3dfa85527f2e116e6cdc16eba2b73_original.png?crop=faces&w=1024&h=576&fit=crop&v=1510002601&auto=format&q=92&s=4dfc98d0559bde550a3098c9c809f117")
 Project.create(user_id: rand(1...7), category_id: 7, funding_goal: 63000,
   title: "Session - Skateboarding simulation game by crea-ture Studios",
   short_blurb: "Embrace skateboarding like never before with our unique dual stick controls and video creation tools. Skate, film, share and repeat!",
   project_details: "Inspired by the golden era of skateboarding, the early 90s and early 2000, Session's primary goal is to make you experience what skateboarding really is; an incredible sport where there are no other goals other than expressing your creativity and achieving success through hard work, perseverance and bits of madness for no one else other than yourself. ",
   funding_end_date: "05/05/2018",
   project_img_url: "https://ksr-ugc.imgix.net/assets/019/050/836/21ff2d2fc927906640f505826ad85e61_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1510971851&auto=format&q=92&s=2de51e624a712258addb3cf46178f048")
+Project.create(user_id: rand(1...7), category_id: 7, funding_goal: 100000,
+  title: "SORCERER",
+  short_blurb: "Sorcerer is a dark fantasy game that melds the best elements of a strategy card game with a tactical board game.",
+  project_details: "Sorcerer is a 2-4 player dark fantasy game from the creators of Star Realms. This new character building game combines the best elements of a strategy card game and a tactical board game to create a whole new play experience! ",
+  funding_end_date: "02/08/2018",
+  project_img_url: "https://ksr-ugc.imgix.net/assets/017/023/737/bdd3dfa85527f2e116e6cdc16eba2b73_original.png?crop=faces&w=1024&h=576&fit=crop&v=1510002601&auto=format&q=92&s=4dfc98d0559bde550a3098c9c809f117")
 Project.create(user_id: rand(1...7), category_id: 7, funding_goal: 29000,
   title: "Escape from Mill Station",
   short_blurb: "An adventure and story driven game about the crew of a Catalina PBY trying to escape a lost world behind the Bermuda Triangle.",
@@ -291,20 +290,20 @@ Project.create(user_id: rand(1...7), category_id: 7, funding_goal: 18000,
   funding_end_date: "10/07/2018",
   project_img_url: "https://ksr-ugc.imgix.net/assets/018/838/608/0b071edc22155a68fb69feb83039ce9a_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1510680373&auto=format&q=92&s=3186b5c81140f94a983eb6e8be11e24e")
 
+Project.create(user_id: rand(1...7), category_id: 9, funding_goal: 50000,
+  title: "OneManBand (OMB) - A New Way to Play Guitar",
+  short_blurb: "A digital backup band that adjusts to your guitar playing in real-time and lets you play other instruments' sounds with no latency.",
+  project_details: "OMB's patented guitar uses unique hardware and software, to enable guitar players of all styles and levels to skyrocket their playing experience with real-time backup music, instrument-swap mode, and a mindblowing guitar-to-MIDI mode.
+
+  The unique technology utilizes capacitive and inductive tech to detect signals from the strings and convert them to digital data without any latency. By knowing what you're playing, the app can convert that to MIDI in real-time and enrich your sound in a bunch of different ways. The guitar feels and plays just like normal, start playing and you'll be amazed. ",
+  funding_end_date: "14/02/2018",
+  project_img_url: "https://ksr-ugc.imgix.net/assets/019/326/805/aa0eb719cb49591486cdc1083c719a23_original.JPG?crop=faces&w=1024&h=576&fit=crop&v=1511791438&auto=format&q=92&s=d1b6fc2db622b03d5e5d54a80de68f31")
 Project.create(user_id: rand(1...7), category_id: 9, funding_goal: 80000,
   title: "THE NEW MEYTAL ALBUM",
   short_blurb: "You guys helped me fund, release and tour my debut album ALCHEMY - I'm ready for round two, join me will ya?",
   project_details: "When I told you guys I wanted to create my debut album, you totally supported the idea, even though you had very little clue if I’ll be able to deliver a full length original album as most of you have just known me as the girl that plays drum covers. but thanks to your support I wasn’t ONLY able to CREATE the album, but you made it CHART on the Billboards, right along side some of the bands that have inspired me to start playing in the first place. SURREAL.",
   funding_end_date: "20/07/2018",
   project_img_url: "https://ksr-ugc.imgix.net/assets/018/921/652/b22ad0a2faccd309b6576f3317dbac0a_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1512081234&auto=format&q=92&s=c03a2747bd67d675111c38ce0e09e7f2")
-Project.create(user_id: rand(1...7), category_id: 9, funding_goal: 50000,
-  title: "OneManBand (OMB) - A New Way to Play Guitar",
-  short_blurb: "A digital backup band that adjusts to your guitar playing in real-time and lets you play other instruments' sounds with no latency.",
-  project_details: "OMB's patented guitar uses unique hardware and software, to enable guitar players of all styles and levels to skyrocket their playing experience with real-time backup music, instrument-swap mode, and a mindblowing guitar-to-MIDI mode.
-
-The unique technology utilizes capacitive and inductive tech to detect signals from the strings and convert them to digital data without any latency. By knowing what you're playing, the app can convert that to MIDI in real-time and enrich your sound in a bunch of different ways. The guitar feels and plays just like normal, start playing and you'll be amazed. ",
-  funding_end_date: "14/02/2018",
-  project_img_url: "https://ksr-ugc.imgix.net/assets/019/326/805/aa0eb719cb49591486cdc1083c719a23_original.JPG?crop=faces&w=1024&h=576&fit=crop&v=1511791438&auto=format&q=92&s=d1b6fc2db622b03d5e5d54a80de68f31")
 Project.create(user_id: rand(1...7), category_id: 9, funding_goal: 30000,
   title: "LIFELIKE Electronic Dreams",
   short_blurb: "My album Electronic Dreams is now OUR project, together we can make this happen ",
@@ -327,6 +326,12 @@ We've also created 3 brand new  EXCLUSIVE T-Shirt designs that are ONLY gonna be
   project_img_url: "https://ksr-ugc.imgix.net/assets/017/947/310/a5742718b473e2a1517b3fee509fffc3_original.png?crop=faces&w=1024&h=576&fit=crop&v=1509398534&auto=format&q=92&s=08c68a8e4325807bd933129934e3e8f3")
 
 
+Project.create(user_id: rand(1...7), category_id: 10, funding_goal: 52000,
+  title: "500 Years Later: An Oral History of Final Fantasy VII",
+  short_blurb: "An inside look at the creation and fallout of an industry defining role-playing game, as told by those who were there.",
+  project_details: "500 Years Later offers a thrilling deep dive into the creation of the revered PlayStation RPG. Comprising over 30 interwoven voices, this beautifully produced book will offer unprecedented insight into the craft and ambition behind the game.",
+  funding_end_date: "26/03/2018",
+  project_img_url: "https://ksr-ugc.imgix.net/assets/018/144/697/ebd8dfbc8de37a5daa52032767728bda_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1510003003&auto=format&q=92&s=5ef5752893f059a9f0219e17e3cdb0de")
 Project.create(user_id: rand(1...7), category_id: 10, funding_goal: 4503,
   title: "The Trove: A Novel",
   short_blurb: "Treasure Island like you've never read it before... When Jane Hawkins heads for the stars, her life changes forever.",
@@ -335,12 +340,6 @@ Project.create(user_id: rand(1...7), category_id: 10, funding_goal: 4503,
   But a new occupant under their roof is about to change everything. His name is William Osteonides. More machine than man, he's crewed aboard ships that sail through the universe faster than light.",
   funding_end_date: "04/07/2018",
   project_img_url: "https://ksr-ugc.imgix.net/assets/019/457/865/971f55bcff1a15897648fe33a761a60e_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1512153579&auto=format&q=92&s=26228ad699d4c94c3677ec8dee134a22")
-Project.create(user_id: rand(1...7), category_id: 10, funding_goal: 52000,
-  title: "500 Years Later: An Oral History of Final Fantasy VII",
-  short_blurb: "An inside look at the creation and fallout of an industry defining role-playing game, as told by those who were there.",
-  project_details: "500 Years Later offers a thrilling deep dive into the creation of the revered PlayStation RPG. Comprising over 30 interwoven voices, this beautifully produced book will offer unprecedented insight into the craft and ambition behind the game.",
-  funding_end_date: "26/03/2018",
-  project_img_url: "https://ksr-ugc.imgix.net/assets/018/144/697/ebd8dfbc8de37a5daa52032767728bda_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1510003003&auto=format&q=92&s=5ef5752893f059a9f0219e17e3cdb0de")
 Project.create(user_id: rand(1...7), category_id: 10, funding_goal: 7000,
   title: "LETTRES MAG",
   short_blurb: "Lettres Mag is a printed art magazine of 26 love letters from around the world",
@@ -360,47 +359,47 @@ Project.create(user_id: rand(1...7), category_id: 10, funding_goal: 63000,
   funding_end_date: "03/08/2018",
   project_img_url: "https://ksr-ugc.imgix.net/assets/019/323/630/01eb45a9715f45dabbce43bf6e8b7ae1_original.jpg?crop=faces&w=1024&h=576&fit=crop&v=1511257029&auto=format&q=92&s=2f526423cec4dd750f888368151452ca")
 
-Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-
-Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
-Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
-  title: "my test project16", short_blurb: "this is a test project hello world",
-  project_details: "these are test details", funding_end_date: "01/02/2090",
-  project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 8, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+#
+# Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
+# Project.create(user_id: rand(1...7), category_id: 11, funding_goal: 6000,
+#   title: "my test project16", short_blurb: "this is a test project hello world",
+#   project_details: "these are test details", funding_end_date: "01/02/2090",
+#   project_img_url: "https://i.ytimg.com/vi/yaqe1qesQ8c/maxresdefault.jpg")
 
 
 
