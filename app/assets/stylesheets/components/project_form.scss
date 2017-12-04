@@ -106,19 +106,47 @@
   padding: 0px 8px 10px;
 }
 
-.all-forms button:focus {
+.form-button:focus {
   outline: 0;
   color: #2752ff;
   background-color: rgba(240,240,240,0.6);
 }
 
-.all-forms button:active {
+
+
+
+.form-button:active {
   border-left: 1px solid #dad7d4;
 }
 
-.all-forms button:hover {
+.form-button:hover {
   cursor: pointer;
   color: #2752ff;
+}
+.inactive:hover {
+  cursor:inherit;
+  color: black;
+}
+
+.inactive {
+  padding: 20px;
+  background-color: white;
+  border-color: #dad7d4;
+  border-top: none;
+  border-bottom: none;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+
+.inactive:focus {
+  outline: 0;
+  color:black;
+  background-color: white;
 }
 
 .all-forms label:focus {

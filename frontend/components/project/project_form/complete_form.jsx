@@ -98,7 +98,7 @@ class CompleteForm extends React.Component {
     if (this.props.projects[this.props.projects.length - 1] !== undefined) {
       this.state.rewards_attributes.project_id =
       this.props.projects[this.props.projects.length - 1].id + 1;
-      
+
     }
 
     return (
@@ -115,7 +115,7 @@ class CompleteForm extends React.Component {
                   <i className="fa fa-check-circle"></i>
                   <p>Basics</p>
                 </button>
-                <button className="form-button"
+                <button className="form-button inactive"
                   type="submit"
                   value="rewards">
                   <i className="fa fa-check-circle"></i>
