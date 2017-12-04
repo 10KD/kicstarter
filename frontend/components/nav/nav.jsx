@@ -12,7 +12,10 @@ const signIn = () => (
 export default ({currentUser, logout}) => (
   <div className="nav">
     <section className="nav-left">
-      <div>Explore</div>
+      <Link to="/">
+        
+        <div>Explore</div>
+      </Link>
     <button className="start-project">
       <Link to="/new">
         <span>Start a project</span>

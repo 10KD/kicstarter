@@ -1,24 +1,24 @@
 # Kicstarter
 
-Kicstarter is a crowdfunding platform inspired by Kickstarter. It's a fullstack application built with a Ruby on Rails backend, PostgreSQL database, and React-Redux on the frontend. Much like Kickstarter, users can create projects with fund raising goals. Other users can then browse and back those projects. 
+Kicstarter is a crowdfunding platform inspired by Kickstarter. It's a fullstack application built with a Ruby on Rails backend, PostgreSQL database, and React-Redux on the frontend. Much like Kickstarter, users can create projects with fund raising goals.
 
 Kicstarter was created in 8 days by Don Kim.
 
 [![](https://raw.githubusercontent.com/10KD/FSP/master/Screen%20Shot%202017-12-03%20at%202.06.19%20PM.png)](https://kicstarter.herokuapp.com)
 
-# Features 
+# Features
 
 * Creating and logging in User accounts, Secure authentication.
-* Create and view projects. 
-* Image link for projects. 
-* Filter by project category. 
+* Create and view projects.
+* Image link for projects.
+* Filter by project category.
 
 
-# Implementation 
+# Implementation
 
 ### Authentication
 
-* Users are able to create a new account, login with an existing account, or login as a guest. 
+* Users are able to create a new account, login with an existing account, or login as a guest.
 * In order to create a project, the user must be logged in. Trying to create a project while logged out will redirect you to the login page.
 * Trying to access the login page while already logged in will redirect you to the index page.
 
@@ -50,7 +50,9 @@ const Auth = ({component: Component, path, loggedIn}) => (
 
 ### Projects
 
-To create projects, I implemented a project form component. The form component provides relevant forms under different tabs to input information regarding the project. By nesting all of the relevant pages under one concise component, I was able to avoid needing to create a large form that requires you to scroll up and down the page in order to create a project. To achieve this, I stored a key value pair indicating which form should be rendered depending on what tab the user clicks on. 
+[![](https://raw.githubusercontent.com/10KD/FSP/master/Screen%20Shot%202017-12-03%20at%202.12.34%20PM.png)](https://kicstarter.herokuapp.com)
+
+To create projects, I implemented a project form component. The form component provides relevant forms under different tabs to input information regarding the project. By nesting all of the relevant pages under one concise component, I was able to avoid needing to create a large form that requires you to scroll up and down the page in order to create a project. To achieve this, I stored a key value pair indicating which form should be rendered depending on what tab the user clicks on.
 
 ```ruby
 basicsForm () {
@@ -70,7 +72,3 @@ basicsForm () {
     }
   }
 ```
-
-    
-    
-

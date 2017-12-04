@@ -68,8 +68,6 @@ class CompleteForm extends React.Component {
     e.preventDefault();
     // this.setState({ ['formType']: "basics" });
     this.props.createProject(this.state).then(object => {
-      // console.log(object.project);
-      // console.log(object.project.id);
       return this.props.history.push(`/projects/${object.project.id}`);
     }
     );
@@ -115,7 +113,7 @@ class CompleteForm extends React.Component {
                   <i className="fa fa-check-circle"></i>
                   <p>Basics</p>
                 </button>
-                <button className="form-button inactive"
+                <button className="inactive"
                   type="submit"
                   value="rewards">
                   <i className="fa fa-check-circle"></i>
