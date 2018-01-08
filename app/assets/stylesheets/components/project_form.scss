@@ -219,6 +219,11 @@
 }
 
 .next:hover {
-
+  cursor: pointer;
+  color: #2752ff;
   transform: translateY(-1px);
+}
+
+.next:focus {
+  outline: 0;
 }
