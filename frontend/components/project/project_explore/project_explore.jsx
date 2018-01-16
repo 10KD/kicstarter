@@ -15,9 +15,16 @@ export default class ProjectExplore extends React.Component {
             <ExploreItem project = {project} />
         ));
         return (
-            <div>
-                <div className='explore-container'>
-                    {exploreItems}
+            <div className='explore-container'>
+                <div className="explore-page">
+                    <div className='explore-count'>
+                        <p>
+                            Explore <span>{exploreItems.length} Projects</span>
+                        </p>
+                    </div>
+                    <div className='explore-items-container'>
+                        {exploreItems}
+                    </div>
                 </div>
             </div>
         );
