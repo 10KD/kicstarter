@@ -1,6 +1,6 @@
 import Project from './project';
 import { clearErrors } from '../../../actions/session_actions';
-import { fetchOneProject, deleteProject } from '../../../actions/project_actions';
+import { fetchOneProject, fetchAllProjects, deleteProject } from '../../../actions/project_actions';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ const mapStateToProps = ({entities, errors, session}, ownProps) => {
 
 
 const mapDispatchToProps = (dispatch) => ({
+  fetchAllProjects: () => dispatch(fetchAllProjects()),
   fetchOneProject: project => dispatch(fetchOneProject(project)),
   deleteProject: project => dispatch(deleteProject(project)),
   clearErrors: () => dispatch(clearErrors)

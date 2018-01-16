@@ -12,7 +12,7 @@ const signIn = () => (
 export default ({currentUser, logout}) => (
   <div className="nav">
     <section className="nav-left">
-      <Link to="/">
+      <Link to="/explore">
         
         <div>Explore</div>
       </Link>

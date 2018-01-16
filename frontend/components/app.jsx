@@ -8,6 +8,7 @@ import CompleteFormContainer from './project/project_form/complete_form_containe
 import ProjectsIndexContainer from './project/project_index/project_index_container';
 import ProjectContainer from './project/project_show/project_container';
 import FooterContainer from './footer';
+import ExploreContainer from './project/project_explore/explore_container';
 
 export default () => (
   <div>
@@ -19,6 +20,7 @@ export default () => (
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <Route path="/projects/:id/" component={ProjectContainer} />
+      <Route exact path="/explore" component={ExploreContainer} />
       <Route exact path="/" component={ProjectsIndexContainer} />
     </Switch>
     <FooterContainer />

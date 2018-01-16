@@ -12,12 +12,12 @@ export default class Project extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchOneProject(this.props.match.params.id);
+    this.props.fetchAllProjects();
   }
 
   componentWillReceiveProps(newProps) {
     if (this.props.match.params.id !== newProps.match.params.id) {
-      this.props.fetchOneProject(newProps.match.params.id);
+      this.props.fetchAllProjects();
     }
   }
 
