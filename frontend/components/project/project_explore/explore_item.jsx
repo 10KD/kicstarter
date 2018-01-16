@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 export default class ExploreItem extends React.Component {
     width() {
-        const percent = Math.floor(Math.random() * 100);
         
-        return (
-            {width: `${percent}%`}
-        );
+        // return (
+            
+        // );
     }
     render() {
+        const percent = Math.floor(Math.random() * 100);
         const project = this.props.project;
         const categories = [
             "Arts",
@@ -49,7 +49,15 @@ export default class ExploreItem extends React.Component {
                             </div>
                             <div className="explore-stats">
                                 <div className="progress-bar">
-                                    <div className="progress-color" style={this.width()}></div>
+                                    <div className="progress-color" style={{ width: `${percent}%` }}></div>
+                                </div>
+                                <div className="explore-fund">
+                                    <p>{percent}% <span>funded</span></p>
+                                    {/* <br></br> */}
+                                    <p>{remainingDays} <span>days to go</span></p>
+                                </div>
+                                <div className="explore-category">
+                                    Category: {categories[project.category_id - 1]}
                                 </div>
                             </div>
                         </div>

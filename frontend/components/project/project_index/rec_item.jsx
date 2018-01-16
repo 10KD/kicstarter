@@ -19,7 +19,7 @@ export default class RecItem extends React.Component {
                 src={projects[0].project_img_url}></img>
               <p>{projects[0].title}</p>
             </Link>
-            <span>{fundedAmt}% funded</span>
+            <span>{Math.floor(Math.random() * 200) + 1}% funded</span>
           </div>
           <div className="rec-item">
             <Link className="rec-link"
@@ -28,7 +28,7 @@ export default class RecItem extends React.Component {
                 src={projects[1].project_img_url}></img>
               <p>{projects[1].title}</p>
             </Link>
-            <span>{fundedAmt}% funded</span>
+            <span>{Math.floor(Math.random() * 200) + 1}% funded</span>
           </div>
           <div className="rec-item">
             <Link className="rec-link"
@@ -37,7 +37,7 @@ export default class RecItem extends React.Component {
                 src={projects[2].project_img_url}></img>
               <p>{projects[2].title}</p>
             </Link>
-            <span>{fundedAmt}% funded</span>
+            <span>{Math.floor(Math.random() * 200) + 1}% funded</span>
           </div>
           <div className="rec-item">
             <Link className="rec-link"
@@ -46,7 +46,7 @@ export default class RecItem extends React.Component {
                 src={projects[3].project_img_url}></img>
               <p>{projects[3].title}</p>
             </Link>
-            <span>{fundedAmt}% funded</span>
+            <span>{Math.floor(Math.random() * 200) + 1}% funded</span>
           </div>
 
           </div>

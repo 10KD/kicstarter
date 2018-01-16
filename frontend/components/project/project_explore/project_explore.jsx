@@ -12,7 +12,7 @@ export default class ProjectExplore extends React.Component {
 
     render() {
         const exploreItems = this.props.projects.map((project) => (
-            <ExploreItem project = {project} />
+            <ExploreItem project = {project} key = {project.id} />
         ));
         return (
             <div className='explore-container'>

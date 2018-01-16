@@ -54,7 +54,7 @@ export default class IndexItem extends React.Component {
                   <Link to={`/projects/${subProject.id}`}
                   className="sub-title-link">
                   {subProject.title}</Link>
-                  <div>{fundedAmt2}% funded</div>
+                  <div>{Math.floor(Math.random() * 200) + 1}% funded</div>
                 </div>
                 <div className="placeholder-heart-icon">
                 </div>
@@ -71,7 +71,7 @@ export default class IndexItem extends React.Component {
                   <Link to={`/projects/${projects[3].id}`}
                   className="sub-title-link">
                   {projects[3].title}</Link>
-                  <div>{fundedAmt2}% funded</div>
+                  <div>{Math.floor(Math.random() * 200) + 1}% funded</div>
                 </div>
                 <div className="placeholder-heart-icon">
                 </div>
@@ -88,7 +88,7 @@ export default class IndexItem extends React.Component {
                   <Link to={`/projects/${projects[4].id}`}
                   className="sub-title-link">
                   {projects[4].title}</Link>
-                  <div>{fundedAmt2}% funded</div>
+                  <div>{Math.floor(Math.random() * 200) + 1}% funded</div>
                 </div>
                 <div className="placeholder-heart-icon">
                 </div>
@@ -105,7 +105,7 @@ export default class IndexItem extends React.Component {
                   <Link to={`/projects/${projects[2].id}`}
                   className="sub-title-link">
                   {projects[2].title}</Link>
-                  <div>{fundedAmt2}% funded</div>
+                  <div>{Math.floor(Math.random() * 200) + 1}% funded</div>
                 </div>
                 <div className="placeholder-heart-icon">
                 </div>
