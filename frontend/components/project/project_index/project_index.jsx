@@ -160,6 +160,7 @@ class ProjectsIndex extends React.Component {
   }
 
   render() {
+    
     const featuredProject = this.props.projects[0];
     if (featuredProject) {
 

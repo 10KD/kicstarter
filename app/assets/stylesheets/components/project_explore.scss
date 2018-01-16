@@ -1,0 +1,11 @@
+.explore-container {
+    display: flex;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.explore-item {
+    width: calc(7/24 * 100%);
+    padding: 0px 18px;
+    // box-sizing: border-box;
+}
