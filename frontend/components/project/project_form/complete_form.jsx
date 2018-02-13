@@ -1,7 +1,8 @@
 
 import React from 'react';
-import BasicsForm from './basics_form';
 import StoryForm from './story_form';
+import BasicsForm from './basics_form';
+import RewardsForm from './rewards_form';
 import { withRouter, Link } from 'react-router-dom';
 
 class CompleteForm extends React.Component {
@@ -34,7 +35,7 @@ class CompleteForm extends React.Component {
     this.props.clearErrors();
   }
 
-  basicsForm () {
+  basicsForm() {
     if (this.state.formType === "basics") {
       return (
         <BasicsForm
@@ -50,8 +51,18 @@ class CompleteForm extends React.Component {
       );
     }
   }
+  
+  rewardsForm() {
+    if (this.state.formType === "rewards") {
+      return (
+        <RewardsForm
+          renderErrors={this.renderErrors}
+        />
+      );
+    }
+  }
 
-  storyForm () {
+  storyForm() {
     if (this.state.formType === "story") {
       return (
         <StoryForm
@@ -115,7 +126,8 @@ class CompleteForm extends React.Component {
                 </button>
                 <button className="inactive"
                   type="submit"
-                  value="rewards">
+                  value="rewards"
+                  onClick={this.handleInput("formType")}>
                   <i className="fa fa-check-circle"></i>
                   <p>Rewards</p>
                 </button>
