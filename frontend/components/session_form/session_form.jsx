@@ -39,7 +39,9 @@ class SessionForm extends React.Component {
 
   componentWillReceiveProps(newProps) {
     if (newProps.loggedIn) {
-      this.props.history.push('/');
+      console.log("new new new new");
+      
+      this.props.history.push('/new');
     }
   }
 

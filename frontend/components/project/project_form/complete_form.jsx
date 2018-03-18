@@ -57,6 +57,9 @@ class CompleteForm extends React.Component {
       return (
         <RewardsForm
           renderErrors={this.renderErrors}
+          handleInput={this.handleInput}
+          handleSubmit={this.handleSubmit}
+          project_details={this.state.project_details}
         />
       );
     }
@@ -124,7 +127,7 @@ class CompleteForm extends React.Component {
                   <i className="fa fa-check-circle"></i>
                   <p>Basics</p>
                 </button>
-                <button className="inactive"
+                <button className="form-button"
                   type="submit"
                   value="rewards"
                   onClick={this.handleInput("formType")}>
@@ -151,6 +154,7 @@ class CompleteForm extends React.Component {
 
             {this.basicsForm()}
             {this.storyForm()}
+            {this.rewardsForm()}
 
           </section>
         </div>
