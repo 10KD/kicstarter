@@ -30,6 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails_12factor'
 gem 'jquery-rails'
 gem 'faker'
+gem 'rspec_junit_formatter'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
