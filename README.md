@@ -2,7 +2,7 @@
 
 Kicstarter is a crowdfunding platform inspired by Kickstarter. It's a fullstack application built with a Ruby on Rails backend, PostgreSQL database, and React-Redux on the frontend. Much like Kickstarter, users can create projects with fund raising goals.
 
-Kicstarter was created in 8 days by Don Kim.
+Kicstarter was created by Don Kim.
 
 [![](https://raw.githubusercontent.com/10KD/FSP/master/Screen%20Shot%202017-12-03%20at%202.06.19%20PM.png)](https://kicstarter.herokuapp.com)
 
