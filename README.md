@@ -1,6 +1,6 @@
 # Kicstarter
  
-Kicstarter is a crowdfunding platform inspired by Kickstarter. It's a fullstack application built with a Ruby on Rails backend, PostgreSQL database, and React-Redux on the frontend. Much like Kickstarter, users can create projects with fund raising goals.
+Kicstarter is a crowdfunding platform clone of Kickstarter(for demonstrative purposes only). It's a fullstack application built with a React/Redux frontend, Ruby on Rails backend, and PostgreSQL database. Much like Kickstarter, users can create projects with fund raising goals.
 
 Kicstarter was created by Don Kim.
 
@@ -8,7 +8,7 @@ Kicstarter was created by Don Kim.
 
 # Features
 
-* Creating and logging in User accounts, Secure authentication.
+* Create and log into User account. Secure authentication.
 * Create and view projects.
 * Image link for projects.
 * Filter by project category.
@@ -22,7 +22,7 @@ Kicstarter was created by Don Kim.
 * In order to create a project, the user must be logged in. Trying to create a project while logged out will redirect you to the login page.
 * Trying to access the login page while already logged in will redirect you to the index page.
 
-To achieve this, I created two utilities: Auth routes (routes that cannot be accessed while logged in) and Proteced routes (routes that are only accessible while logged in). Both utilies get a boolean state mapped to them, which indicates whether or not a user is logged in. They then return the component or redirect to the appropriate destination depending on the boolean. After I created those routes, the implementation was fairly straightforward. I componentized each route and nested them under a switch.
+To achieve this, I created two utilities: Auth routes (which can be accessed without logging in) and Proteced routes (routes that are only accessible while logged in). Both utilities get a boolean state mapped to them, which indicates whether or not a user is logged in. They then return the component or redirect to the appropriate destination depending on the boolean. After I created those routes, the implementation was fairly straightforward. I componentized each route and nested them under a switch.
 ```ruby
 # route_util.jsx
 
@@ -52,7 +52,7 @@ const Auth = ({component: Component, path, loggedIn}) => (
 
 [![](https://raw.githubusercontent.com/10KD/FSP/master/Screen%20Shot%202017-12-03%20at%202.12.34%20PM.png)](https://kicstarter.herokuapp.com)
 
-To create projects, I implemented a project form component. The form component provides relevant forms under different tabs to input information regarding the project. By nesting all of the relevant pages under one concise component, I was able to avoid needing to create a large form that requires you to scroll up and down the page in order to create a project. To achieve this, I stored a key value pair indicating which form should be rendered depending on what tab the user clicks on.
+To create projects, I implemented a project form component. The form component provides relevant forms under different tabs, so users can input information regarding the project. By nesting all of the relevant pages under one concise component, I was able to avoid needing to create a large form that requires you to scroll up and down the page in order to create a project. To achieve this, I stored a key value pair indicating which form should be rendered depending on what tab the user clicks on.
 
 ```ruby
 basicsForm () {
